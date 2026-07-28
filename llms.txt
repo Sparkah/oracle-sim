@@ -30,9 +30,12 @@ offline.
 
 - battlebots.fandom.com via Bright Data Web Unlocker: 25 pages, 24 bots, 23 fights
 - x.com via Bright Data Scraper API dataset gd_lwxkxvnf1cynvib9co: 40 posts, 10 bots mentioned
+- youtube.com via Bright Data Scraper API dataset gd_lk9q0ew71spt1mxywf: 470 comments across 15
+  Pro League episode videos, 21 of 24 bots mentioned (Tombstone 50, Skorpios 48, HyperShock 20)
 - gamma-api.polymarket.com via Web Unlocker: no BattleBots market exists
-- reddit.com and youtube.com: REFUSED by Web Unlocker on robots.txt grounds, not fetched, and
-  no substitute data was invented
+- reddit.com: REFUSED by Web Unlocker on robots.txt grounds, not fetched, and no substitute data
+  was invented. The same carve-out applies to x.com and youtube.com under Web Unlocker; both were
+  reached instead through the dedicated Scraper API datasets, which is the correct route.
 
 ## Notable engineering results
 

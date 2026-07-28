@@ -39,6 +39,19 @@ all of X. That ceiling is recorded in `data/bots.json` under `_meta.chatter.cave
 We publish **reach, not sentiment**: the dataset returns engagement counts, not tone. Running a
 keyword sentiment guess over 40 posts would be inventing a number the source never provided.
 
+### youtube.com - Scraper API dataset `gd_lk9q0ew71spt1mxywf` - 470 comments
+
+Comments across 15 Pro League episode videos, whose URLs came out of the wiki pages we had
+already cached. 21 of 24 bots are discussed - Tombstone 50 mentions, Skorpios 48, HyperShock 20 -
+which is more than double the coverage X gave us.
+
+Again this is **volume and likes, not sentiment**, for the same reason: the dataset returns
+engagement counts, not tone.
+
+We nearly did not get this. Web Unlocker refuses youtube.com, and we had written it off as
+unavailable. It is served by the same Scraper API dataset mechanism as X, and once that was
+understood the collection took 34 seconds.
+
 ### gamma-api.polymarket.com - Web Unlocker
 
 Used to answer one question: does a robot-combat prediction market exist? Searched `battlebots`,
@@ -51,7 +64,7 @@ folding those back in would be the model confirming itself.
 
 ## Refused
 
-### reddit.com and youtube.com - Web Unlocker
+### reddit.com - Web Unlocker
 
 ```
 Request Failed (bad_endpoint): Requested site is not available for immediate access mode
@@ -60,15 +73,17 @@ in accordance with robots.txt. Ask your account manager to get full access for t
 
 Adding our IP to the allowlist **changed nothing**, because it was never an IP restriction. The
 large social platforms are carved out of Web Unlocker's immediate-access mode and served by the
-dedicated Scraper API datasets instead.
+dedicated Scraper API datasets instead. x.com and youtube.com hit the identical message and both
+were reached successfully through their datasets - so the refusal is a routing problem, not a
+wall. Reddit is the one we did not get, because we ran out of time rather than because it is
+impossible.
 
-We got this wrong for about an hour: we tested Reddit, hit the refusal, and assumed x.com behaved
-the same way **without testing it**. It does not - X has a dataset and it works. The lesson is
-recorded here rather than tidied away.
+We got this wrong for about an hour: we tested Reddit, hit the refusal, and assumed x.com and
+youtube.com behaved the same way **without testing them**. They do not - both have datasets and
+both work. That mistake cost us the richest source in the project until someone corrected us, and
+it is recorded here rather than tidied away.
 
-YouTube episode comments would have been the best sentiment source in the whole project and we
-did not get them. There is therefore **no Reddit or YouTube data in this repository**, rather
-than something invented in its place.
+There is **no Reddit data in this repository**, rather than something invented in its place.
 
 ## Provenance is enforced, not asserted
 
