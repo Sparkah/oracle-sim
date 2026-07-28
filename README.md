@@ -48,8 +48,8 @@ node tools/qa.cjs                # headless browser test (needs the server runni
 | battlebots.fandom.com | Web Unlocker | 25 pages, 24 bots, 23 fights |
 | x.com | Scraper API dataset | 40 posts, 10 bots mentioned |
 | youtube.com | Scraper API dataset | 470 comments over 15 episode videos, 21 bots mentioned |
+| reddit.com | Scraper API dataset | 497 r/battlebots posts, 16 bots mentioned |
 | gamma-api.polymarket.com | Web Unlocker | live markets; no BattleBots market exists |
-| reddit.com | Web Unlocker | **refused** (robots.txt), not fetched |
 
 Nothing is hand-entered. There are no authored power ratings anywhere in the codebase - every
 number the model uses is derived from the scraped fight list at load time.
@@ -80,9 +80,9 @@ Stated here rather than buried, because the whole point of the project is not ov
   refuses to invent them.
 - **18 of 24 bots are vertical spinners**, so most of the weapon-matchup grid is empty prior.
 - **The +15.2 point "lift" over the baseline is not significant** and we do not claim it.
-- **The fan data is volume, not sentiment.** Both the X and YouTube datasets return engagement
-  counts, not tone, so no mood score is inferred anywhere. X additionally discovers by profile
-  rather than by keyword.
+- **The fan data is volume, not sentiment.** The X, YouTube and Reddit datasets all return
+  engagement counts, not tone, so no mood score is inferred anywhere. X additionally discovers
+  by profile rather than by keyword.
 - **The arena is forecast playback, not physics.** The model decides the winner and the visuals
   play toward it.
 

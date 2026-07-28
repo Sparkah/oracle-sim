@@ -32,10 +32,12 @@ offline.
 - x.com via Bright Data Scraper API dataset gd_lwxkxvnf1cynvib9co: 40 posts, 10 bots mentioned
 - youtube.com via Bright Data Scraper API dataset gd_lk9q0ew71spt1mxywf: 470 comments across 15
   Pro League episode videos, 21 of 24 bots mentioned (Tombstone 50, Skorpios 48, HyperShock 20)
+- reddit.com via Bright Data Scraper API dataset gd_lvz8ah06191smkebj4: 497 r/battlebots posts,
+  16 of 24 bots discussed (HUGE 18 posts / 9,649 upvotes, Tombstone 16)
 - gamma-api.polymarket.com via Web Unlocker: no BattleBots market exists
-- reddit.com: REFUSED by Web Unlocker on robots.txt grounds, not fetched, and no substitute data
-  was invented. The same carve-out applies to x.com and youtube.com under Web Unlocker; both were
-  reached instead through the dedicated Scraper API datasets, which is the correct route.
+- Web Unlocker refuses all three social platforms (x.com, reddit.com, youtube.com) on robots.txt
+  grounds. All three were reached through their dedicated Scraper API datasets instead. Every
+  refusal was a routing problem, not a wall.
 
 ## Notable engineering results
 
@@ -48,6 +50,9 @@ offline.
   not data volume.
 - Fetch route is recorded per page at fetch time, so a cache-served run cannot inherit a Bright
   Data provenance it only partly has.
+- Scraper API validation errors are the contract: each rejection names the field or discovery
+  mode it will not accept, so the input narrows until accepted. Generalising one early refusal
+  into "this platform is unavailable" nearly cost the project its three richest sources.
 
 ## Verification commands
 

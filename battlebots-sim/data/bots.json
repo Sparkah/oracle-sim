@@ -22,6 +22,12 @@
         "comments": 470,
         "videos": 15,
         "caveat": "Comment volume and likes, not sentiment. Whole-word bot-name matches."
+      },
+      "reddit": {
+        "source": "reddit.com via Bright Data Scraper API (dataset gd_lvz8ah06191smkebj4, discover_by=subreddit_url)",
+        "items": 498,
+        "subreddit": "r/battlebots",
+        "caveat": "Post volume and upvotes, not sentiment. Whole-word bot-name matches. Web Unlocker refuses reddit.com on robots.txt grounds; the dataset API is the correct route."
       }
     }
   },
@@ -73,11 +79,13 @@
       "from": "Berkeley, CA (BB FaceOffs-Present) Somerville, MA (WC IV-BB: Champions II) Cambridge, MA (WC III)",
       "team": "Team VALKYRIE (WC VI-Present) Team Questionable Designs (WC III-WC V)",
       "chatter": {
-        "mentions": 6,
+        "mentions": 10,
         "views": 0,
         "likes": 13,
         "ytComments": 6,
-        "xMentions": 0
+        "xMentions": 0,
+        "redditMentions": 4,
+        "redditUpvotes": 2300
       }
     },
     {
@@ -91,11 +99,13 @@
       "from": "Moraga, CA",
       "team": "Bot Bash Party Crew (formerly Offbeat Robotics)",
       "chatter": {
-        "mentions": 50,
+        "mentions": 52,
         "views": 25501,
         "likes": 860,
         "ytComments": 48,
-        "xMentions": 2
+        "xMentions": 2,
+        "redditMentions": 2,
+        "redditUpvotes": 870
       }
     },
     {
@@ -109,11 +119,13 @@
       "from": "Pomona, CA",
       "team": "Team Bad Kitty",
       "chatter": {
-        "mentions": 7,
+        "mentions": 11,
         "views": 25501,
         "likes": 703,
         "ytComments": 5,
-        "xMentions": 2
+        "xMentions": 2,
+        "redditMentions": 4,
+        "redditUpvotes": 3042
       }
     },
     {
@@ -157,11 +169,13 @@
       "from": null,
       "team": "Hardcore Robotics",
       "chatter": {
-        "mentions": 53,
+        "mentions": 69,
         "views": 53923,
         "likes": 1177,
         "ytComments": 50,
-        "xMentions": 3
+        "xMentions": 3,
+        "redditMentions": 16,
+        "redditUpvotes": 7332
       }
     },
     {
@@ -175,11 +189,13 @@
       "from": "Denver, CO",
       "team": "Team Copperhead (formerly Caustic Creations)",
       "chatter": {
-        "mentions": 2,
+        "mentions": 9,
         "views": 0,
         "likes": 18,
         "ytComments": 2,
-        "xMentions": 0
+        "xMentions": 0,
+        "redditMentions": 7,
+        "redditUpvotes": 4574
       }
     },
     {
@@ -205,11 +221,13 @@
       "from": "Oceanside, CA (previously Bromsgrove, UK)",
       "team": "Robotic Death Company (WC VI-Present) Team Carbide (WC II, WC IV)",
       "chatter": {
-        "mentions": 8,
+        "mentions": 9,
         "views": 25501,
         "likes": 719,
         "ytComments": 6,
-        "xMentions": 2
+        "xMentions": 2,
+        "redditMentions": 1,
+        "redditUpvotes": 408
       }
     },
     {
@@ -223,11 +241,13 @@
       "from": "Las Vegas, NV",
       "team": "Vegas Combat Robotics",
       "chatter": {
-        "mentions": 3,
+        "mentions": 7,
         "views": 25501,
         "likes": 700,
         "ytComments": 1,
-        "xMentions": 2
+        "xMentions": 2,
+        "redditMentions": 4,
+        "redditUpvotes": 2033
       }
     },
     {
@@ -241,11 +261,13 @@
       "from": "San Jose, CA",
       "team": "Team Malice",
       "chatter": {
-        "mentions": 4,
+        "mentions": 9,
         "views": 25501,
         "likes": 700,
         "ytComments": 2,
-        "xMentions": 2
+        "xMentions": 2,
+        "redditMentions": 5,
+        "redditUpvotes": 3315
       }
     },
     {
@@ -295,11 +317,13 @@
       "from": "Auckland, AUK, New Zealand",
       "team": "Team End Game (formerly OYES Robotics)",
       "chatter": {
-        "mentions": 4,
+        "mentions": 7,
         "views": 16749,
         "likes": 396,
         "ytComments": 3,
-        "xMentions": 1
+        "xMentions": 1,
+        "redditMentions": 3,
+        "redditUpvotes": 1204
       }
     },
     {
@@ -313,11 +337,13 @@
       "from": "South Windsor, CT",
       "team": "Team HUGE",
       "chatter": {
-        "mentions": 8,
+        "mentions": 26,
         "views": 0,
         "likes": 43,
         "ytComments": 8,
-        "xMentions": 0
+        "xMentions": 0,
+        "redditMentions": 18,
+        "redditUpvotes": 9649
       }
     },
     {
@@ -331,11 +357,13 @@
       "from": "Rio de Janeiro, RJ, Brazil",
       "team": "Team RioBotz",
       "chatter": {
-        "mentions": 7,
+        "mentions": 16,
         "views": 0,
         "likes": 58,
         "ytComments": 7,
-        "xMentions": 0
+        "xMentions": 0,
+        "redditMentions": 9,
+        "redditUpvotes": 4562
       }
     },
     {
@@ -349,11 +377,13 @@
       "from": "Cambridge, MA",
       "team": "Bots 'n' Stuff Robotics",
       "chatter": {
-        "mentions": 4,
+        "mentions": 5,
         "views": 79140,
         "likes": 362,
         "ytComments": 3,
-        "xMentions": 1
+        "xMentions": 1,
+        "redditMentions": 1,
+        "redditUpvotes": 408
       }
     },
     {
@@ -367,11 +397,13 @@
       "from": "Miami, FL",
       "team": "Team HyperShock (formerly Shenanigans & Co.)",
       "chatter": {
-        "mentions": 24,
+        "mentions": 29,
         "views": 77274,
         "likes": 1294,
         "ytComments": 20,
-        "xMentions": 4
+        "xMentions": 4,
+        "redditMentions": 5,
+        "redditUpvotes": 2474
       }
     },
     {
@@ -385,11 +417,13 @@
       "from": "Miami, FL",
       "team": "Team Witch Doctor (formerly Busted Nuts Robotics)",
       "chatter": {
-        "mentions": 4,
+        "mentions": 8,
         "views": 17669,
         "likes": 297,
         "ytComments": 3,
-        "xMentions": 1
+        "xMentions": 1,
+        "redditMentions": 4,
+        "redditUpvotes": 1658
       }
     },
     {
@@ -403,11 +437,13 @@
       "from": "Dallas, TX",
       "team": "Team Midnight Invention",
       "chatter": {
-        "mentions": 1,
+        "mentions": 2,
         "views": 0,
         "likes": 7,
         "ytComments": 1,
-        "xMentions": 0
+        "xMentions": 0,
+        "redditMentions": 1,
+        "redditUpvotes": 408
       }
     },
     {
@@ -420,7 +456,13 @@
       "weaponText": "Vertical disk spinner Horizontal undercutter Vertical bar spinner Lifter (WC IV) Eggbeater spinner (BB BB Pro League)",
       "from": "Boston, MA",
       "team": "Team Ribbot (formerly Team WPI)",
-      "chatter": null
+      "chatter": {
+        "mentions": 4,
+        "views": 0,
+        "likes": 0,
+        "redditMentions": 4,
+        "redditUpvotes": 1842
+      }
     },
     {
       "id": "orbitron",

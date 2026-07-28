@@ -52,6 +52,23 @@ We nearly did not get this. Web Unlocker refuses youtube.com, and we had written
 unavailable. It is served by the same Scraper API dataset mechanism as X, and once that was
 understood the collection took 34 seconds.
 
+### reddit.com - Scraper API dataset `gd_lvz8ah06191smkebj4` - 497 posts
+
+Top posts of the month from r/battlebots, discovered by `subreddit_url`. 16 of 24 bots are
+discussed; HUGE leads with 18 posts carrying 9,649 upvotes, then Tombstone on 16.
+
+Volume and upvotes, not sentiment, for the same reason as the others.
+
+This one is the honest low point of the build. Reddit was written off early: Web Unlocker
+refuses it, one dataset attempt returned a validation error, and it was abandoned - while
+x.com and youtube.com were pursued through the identical mechanism until they worked. It only
+got revisited because someone at the event said Reddit worked for them.
+
+It did. The first attempt had sent a `date` field that mode does not accept, and the second
+sent `time_filter` instead of `sort_by_time`. Correcting the field name was the entire fix.
+The collection then took 7.8 minutes, against 26 seconds for X and 34 for YouTube, which is
+why it looked dead when it was merely slow.
+
 ### gamma-api.polymarket.com - Web Unlocker
 
 Used to answer one question: does a robot-combat prediction market exist? Searched `battlebots`,
@@ -62,28 +79,35 @@ So the app emits the Pro League matchups as genuine Polymarket market objects, c
 fetched markets, finds nothing, says so, and **refuses to fall back on our own proposed prices** -
 folding those back in would be the model confirming itself.
 
-## Refused
+## What Web Unlocker refuses, and why it does not matter
 
-### reddit.com - Web Unlocker
+All three social platforms return the same message:
 
 ```
 Request Failed (bad_endpoint): Requested site is not available for immediate access mode
 in accordance with robots.txt. Ask your account manager to get full access for targeting this site
 ```
 
-Adding our IP to the allowlist **changed nothing**, because it was never an IP restriction. The
-large social platforms are carved out of Web Unlocker's immediate-access mode and served by the
-dedicated Scraper API datasets instead. x.com and youtube.com hit the identical message and both
-were reached successfully through their datasets - so the refusal is a routing problem, not a
-wall. Reddit is the one we did not get, because we ran out of time rather than because it is
-impossible.
+Adding our IP to the allowlist **changed nothing**, because it was never an IP restriction.
+x.com, reddit.com and youtube.com are carved out of Web Unlocker's immediate-access mode and
+served by dedicated Scraper API datasets instead.
 
-We got this wrong for about an hour: we tested Reddit, hit the refusal, and assumed x.com and
-youtube.com behaved the same way **without testing them**. They do not - both have datasets and
-both work. That mistake cost us the richest source in the project until someone corrected us, and
-it is recorded here rather than tidied away.
+**All three were fetched successfully through those datasets.** Not one was a wall. Every
+refusal in this project turned out to be a routing problem.
 
-There is **no Reddit data in this repository**, rather than something invented in its place.
+The technique that unlocked them is worth stating plainly, because it is reusable: **the
+validation errors are the contract.** Each rejection names the field it will not take or lists
+the discovery modes it supports - `profile_url` and `profiles_array` for X, `subreddit_url`,
+`keyword` and `author_url` for Reddit - so every failed call narrows the input until it is
+accepted. Nothing here required documentation we did not have.
+
+The mistake worth reporting: we tested Reddit, hit the refusal, and generalised it into "the
+social platforms are unavailable" without testing the others. That assumption cost us YouTube -
+the single richest source in the project - for most of the evening, and cost us Reddit until
+someone told us it worked for them. One refusal is a data point, not a rule.
+
+The one genuine failure is the `Reddit - Comments` dataset, which returned `records: 0` with a
+crawl error. Post volume is included; Reddit comment text is not.
 
 ## Provenance is enforced, not asserted
 

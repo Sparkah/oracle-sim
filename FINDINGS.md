@@ -122,8 +122,11 @@ We therefore left the app on the 23 real season fights and kept the career set a
 
 ## What we would do next
 
-- **YouTube episode comments** are the richest sentiment source for this and are exactly what
-  Web Unlocker refuses. That needs an account-manager unlock.
-- **More X profiles.** The dataset discovers by profile, so adding team accounts multiplies the
-  chatter with a config change. It cannot keyword-search, which is the real ceiling.
+- **Sentiment, properly.** All three social datasets return engagement counts and not tone, so
+  the app reports volume and reach only. Real sentiment needs a model over the comment text we
+  now hold - 470 YouTube comments and 497 Reddit posts - rather than another scrape.
+- **Reddit comment text.** The `Reddit - Comments` dataset failed with a crawl error where
+  `Reddit - Posts` succeeded. Worth retrying; it is the densest opinion source available.
+- **More X profiles.** That dataset discovers by profile, so adding team accounts multiplies the
+  coverage with a config change. It cannot keyword-search, which is the real ceiling.
 - **Not more history.** We tested that. See above.
