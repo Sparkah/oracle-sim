@@ -16,7 +16,13 @@
         "https://x.com/RobotCombat"
       ],
       "fetchedAt": "2026-07-28T18:36:07.745Z",
-      "caveat": "The X Posts dataset discovers by profile, not keyword, so this is league/team account output rather than a search of all of X. Mention counts are whole-word name matches."
+      "caveat": "The X Posts dataset discovers by profile, not keyword, so this is league/team account output rather than a search of all of X. Mention counts are whole-word name matches.",
+      "youtube": {
+        "source": "youtube.com via Bright Data Scraper API (dataset gd_lk9q0ew71spt1mxywf)",
+        "comments": 470,
+        "videos": 15,
+        "caveat": "Comment volume and likes, not sentiment. Whole-word bot-name matches."
+      }
     }
   },
   "bots": [
@@ -30,7 +36,13 @@
       "weaponText": "Eggbeater drum spinner",
       "from": "Tempe, AZ",
       "team": "Team Tanto Robotics",
-      "chatter": null
+      "chatter": {
+        "mentions": 2,
+        "views": 0,
+        "likes": 3,
+        "ytComments": 2,
+        "xMentions": 0
+      }
     },
     {
       "id": "terrortops",
@@ -42,7 +54,13 @@
       "weaponText": "Vertical spinner Lifter",
       "from": "Long Beach, CA",
       "team": "Team Terrortops",
-      "chatter": null
+      "chatter": {
+        "mentions": 7,
+        "views": 0,
+        "likes": 12,
+        "ytComments": 7,
+        "xMentions": 0
+      }
     },
     {
       "id": "valkyrie",
@@ -54,7 +72,13 @@
       "weaponText": "Undercutter spinner",
       "from": "Berkeley, CA (BB FaceOffs-Present) Somerville, MA (WC IV-BB: Champions II) Cambridge, MA (WC III)",
       "team": "Team VALKYRIE (WC VI-Present) Team Questionable Designs (WC III-WC V)",
-      "chatter": null
+      "chatter": {
+        "mentions": 6,
+        "views": 0,
+        "likes": 13,
+        "ytComments": 6,
+        "xMentions": 0
+      }
     },
     {
       "id": "skorpios",
@@ -67,9 +91,11 @@
       "from": "Moraga, CA",
       "team": "Bot Bash Party Crew (formerly Offbeat Robotics)",
       "chatter": {
-        "mentions": 2,
-        "likes": 698,
-        "views": 25501
+        "mentions": 50,
+        "views": 25501,
+        "likes": 860,
+        "ytComments": 48,
+        "xMentions": 2
       }
     },
     {
@@ -83,9 +109,11 @@
       "from": "Pomona, CA",
       "team": "Team Bad Kitty",
       "chatter": {
-        "mentions": 2,
-        "likes": 698,
-        "views": 25501
+        "mentions": 7,
+        "views": 25501,
+        "likes": 703,
+        "ytComments": 5,
+        "xMentions": 2
       }
     },
     {
@@ -98,7 +126,13 @@
       "weaponText": "Eggbeater drum spinner",
       "from": "Parker, CO",
       "team": "Team Wazio",
-      "chatter": null
+      "chatter": {
+        "mentions": 1,
+        "views": 0,
+        "likes": 1,
+        "ytComments": 1,
+        "xMentions": 0
+      }
     },
     {
       "id": "disarray",
@@ -123,9 +157,11 @@
       "from": null,
       "team": "Hardcore Robotics",
       "chatter": {
-        "mentions": 3,
-        "likes": 1002,
-        "views": 53923
+        "mentions": 53,
+        "views": 53923,
+        "likes": 1177,
+        "ytComments": 50,
+        "xMentions": 3
       }
     },
     {
@@ -138,7 +174,13 @@
       "weaponText": "Eggbeater drum spinner",
       "from": "Denver, CO",
       "team": "Team Copperhead (formerly Caustic Creations)",
-      "chatter": null
+      "chatter": {
+        "mentions": 2,
+        "views": 0,
+        "likes": 18,
+        "ytComments": 2,
+        "xMentions": 0
+      }
     },
     {
       "id": "the-twins",
@@ -163,9 +205,11 @@
       "from": "Oceanside, CA (previously Bromsgrove, UK)",
       "team": "Robotic Death Company (WC VI-Present) Team Carbide (WC II, WC IV)",
       "chatter": {
-        "mentions": 2,
-        "likes": 698,
-        "views": 25501
+        "mentions": 8,
+        "views": 25501,
+        "likes": 719,
+        "ytComments": 6,
+        "xMentions": 2
       }
     },
     {
@@ -179,9 +223,11 @@
       "from": "Las Vegas, NV",
       "team": "Vegas Combat Robotics",
       "chatter": {
-        "mentions": 2,
-        "likes": 698,
-        "views": 25501
+        "mentions": 3,
+        "views": 25501,
+        "likes": 700,
+        "ytComments": 1,
+        "xMentions": 2
       }
     },
     {
@@ -195,9 +241,11 @@
       "from": "San Jose, CA",
       "team": "Team Malice",
       "chatter": {
-        "mentions": 2,
-        "likes": 698,
-        "views": 25501
+        "mentions": 4,
+        "views": 25501,
+        "likes": 700,
+        "ytComments": 2,
+        "xMentions": 2
       }
     },
     {
@@ -210,7 +258,13 @@
       "weaponText": "Vertical spinner",
       "from": "Chennai, India (BB Pro League) Pondicherry, India (WC V)",
       "team": "PY Roboticzs",
-      "chatter": null
+      "chatter": {
+        "mentions": 3,
+        "views": 0,
+        "likes": 6,
+        "ytComments": 3,
+        "xMentions": 0
+      }
     },
     {
       "id": "deathroll",
@@ -222,7 +276,13 @@
       "weaponText": "Vertical spinning disk",
       "from": "Brisbane, Australia",
       "team": "Team DeathRoll",
-      "chatter": null
+      "chatter": {
+        "mentions": 3,
+        "views": 0,
+        "likes": 18,
+        "ytComments": 3,
+        "xMentions": 0
+      }
     },
     {
       "id": "end-game",
@@ -235,9 +295,11 @@
       "from": "Auckland, AUK, New Zealand",
       "team": "Team End Game (formerly OYES Robotics)",
       "chatter": {
-        "mentions": 1,
-        "likes": 381,
-        "views": 16749
+        "mentions": 4,
+        "views": 16749,
+        "likes": 396,
+        "ytComments": 3,
+        "xMentions": 1
       }
     },
     {
@@ -250,7 +312,13 @@
       "weaponText": "Vertical bar spinner",
       "from": "South Windsor, CT",
       "team": "Team HUGE",
-      "chatter": null
+      "chatter": {
+        "mentions": 8,
+        "views": 0,
+        "likes": 43,
+        "ytComments": 8,
+        "xMentions": 0
+      }
     },
     {
       "id": "minotaur",
@@ -262,7 +330,13 @@
       "weaponText": "Drum spinner",
       "from": "Rio de Janeiro, RJ, Brazil",
       "team": "Team RioBotz",
-      "chatter": null
+      "chatter": {
+        "mentions": 7,
+        "views": 0,
+        "likes": 58,
+        "ytComments": 7,
+        "xMentions": 0
+      }
     },
     {
       "id": "bloodsport",
@@ -275,9 +349,11 @@
       "from": "Cambridge, MA",
       "team": "Bots 'n' Stuff Robotics",
       "chatter": {
-        "mentions": 1,
-        "likes": 358,
-        "views": 79140
+        "mentions": 4,
+        "views": 79140,
+        "likes": 362,
+        "ytComments": 3,
+        "xMentions": 1
       }
     },
     {
@@ -291,9 +367,11 @@
       "from": "Miami, FL",
       "team": "Team HyperShock (formerly Shenanigans & Co.)",
       "chatter": {
-        "mentions": 4,
-        "likes": 1250,
-        "views": 77274
+        "mentions": 24,
+        "views": 77274,
+        "likes": 1294,
+        "ytComments": 20,
+        "xMentions": 4
       }
     },
     {
@@ -307,9 +385,11 @@
       "from": "Miami, FL",
       "team": "Team Witch Doctor (formerly Busted Nuts Robotics)",
       "chatter": {
-        "mentions": 1,
-        "likes": 293,
-        "views": 17669
+        "mentions": 4,
+        "views": 17669,
+        "likes": 297,
+        "ytComments": 3,
+        "xMentions": 1
       }
     },
     {
@@ -322,7 +402,13 @@
       "weaponText": "Articulating eggbeater spinner (WC VII-Present) Articulating drum spinner (WC VI-BB: Champions I)",
       "from": "Dallas, TX",
       "team": "Team Midnight Invention",
-      "chatter": null
+      "chatter": {
+        "mentions": 1,
+        "views": 0,
+        "likes": 7,
+        "ytComments": 1,
+        "xMentions": 0
+      }
     },
     {
       "id": "ribbot",
@@ -346,7 +432,13 @@
       "weaponText": "Twin vertical spinners",
       "from": "Waterloo, ON, Canada",
       "team": "Team Orbitron",
-      "chatter": null
+      "chatter": {
+        "mentions": 4,
+        "views": 0,
+        "likes": 42,
+        "ytComments": 4,
+        "xMentions": 0
+      }
     }
   ]
 }
