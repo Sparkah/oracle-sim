@@ -30,8 +30,8 @@ offline.
 
 - battlebots.fandom.com via Bright Data Web Unlocker: 25 pages, 24 bots, 23 fights
 - x.com via Bright Data Scraper API dataset gd_lwxkxvnf1cynvib9co: 40 posts, 10 bots mentioned
-- youtube.com via Bright Data Scraper API dataset gd_lk9q0ew71spt1mxywf: 470 comments across 15
-  Pro League episode videos, 21 of 24 bots mentioned (Tombstone 50, Skorpios 48, HyperShock 20)
+- youtube.com via Bright Data Scraper API dataset gd_lk9q0ew71spt1mxywf: 3,971 comments across 77
+  episode videos, all 24 bots mentioned (Tombstone 344, Skorpios 206, Witch Doctor 106)
 - reddit.com via Bright Data Scraper API dataset gd_lvz8ah06191smkebj4: 497 r/battlebots posts,
   16 of 24 bots discussed (HUGE 18 posts / 9,649 upvotes, Tombstone 16)
 - gamma-api.polymarket.com via Web Unlocker: no BattleBots market exists

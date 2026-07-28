@@ -60,6 +60,7 @@ async function boot() {
   fetch('data/polymarket.json').then((r) => r.json())
     .then((pm) => { POLY_LIVE = pm.live || []; refresh(); })
     .catch(() => { POLY_LIVE = []; });
+  renderGeo();
   renderPoly();
 
   // back-test is ~60 model refits; keep it off the critical path
@@ -215,6 +216,42 @@ function explain(a, b) {
     .map((x) => `${x.v > 0 ? a.name : b.name} on ${x.n}`);
   if (!parts.length) return 'Too close to call from the season data - the features cancel out.';
   return `Driven by: ${parts.join(', ')}.`;
+}
+
+// ---------------------------------------------------------------- origins
+
+async function renderGeo() {
+  let doc;
+  try { doc = await fetch('data/geography.json').then((r) => r.json()); }
+  catch { $('geoMeta').textContent = 'data/geography.json not found - run node scrape/geography.mjs'; return; }
+  const m = doc._meta || {};
+  $('geoMeta').textContent = `${m.known} of ${m.total} competitors located - ${m.sourceLabel} (${m.requests} extra requests)`;
+
+  const regions = Object.entries(doc.byRegion || {});
+  const max = Math.max(1, ...regions.map(([, v]) => v.length));
+  const wrap = $('geoBars'); wrap.innerHTML = '';
+  for (const [region, names] of regions) {
+    const row = el('div', 'geobar');
+    row.append(el('div', 'gb-l', region));
+    const t = el('div', 'gb-t'); t.style.width = `${(names.length / max) * 100}%`;
+    t.title = names.join(', ');
+    row.append(t);
+    row.append(el('div', 'gb-n', String(names.length)));
+    wrap.append(row);
+  }
+
+  const t = $('geoTable');
+  t.innerHTML = '<thead><tr><th>BOT</th><th>FROM</th><th>TEAM</th></tr></thead>';
+  const tb = el('tbody');
+  for (const b of doc.bots || []) {
+    const tr = el('tr');
+    tr.append(el('td', null, b.name));
+    const o = b.origin;
+    tr.append(el('td', null, o && o.city ? `${o.city}, ${o.region}` : (o && o.region) || '-'));
+    tr.append(el('td', null, b.team || '-'));
+    tb.append(tr);
+  }
+  t.append(tb);
 }
 
 // ---------------------------------------------------------------- polymarket

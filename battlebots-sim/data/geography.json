@@ -1,0 +1,407 @@
+{
+  "_meta": {
+    "source": "battlebots-fandom",
+    "sourceLabel": "battlebots.fandom.com competitor pages via Bright Data Web Unlocker",
+    "derivedFrom": "the `from=` field of each robot's {{Bot}} infobox, on the same 25 pages as the roster",
+    "requests": 0,
+    "known": 23,
+    "total": 24,
+    "caveat": "Team home town, which is not the same thing as where the audience is. Teams that have relocated list several eras; the one marked Present wins."
+  },
+  "bots": [
+    {
+      "id": "manta",
+      "name": "Manta",
+      "team": "Team Tanto Robotics",
+      "from": "Tempe, AZ",
+      "origin": {
+        "city": "Tempe",
+        "region": "Arizona",
+        "code": "AZ",
+        "country": "USA",
+        "raw": "Tempe, AZ"
+      }
+    },
+    {
+      "id": "terrortops",
+      "name": "Terrortops",
+      "team": "Team Terrortops",
+      "from": "Long Beach, CA",
+      "origin": {
+        "city": "Long Beach",
+        "region": "California",
+        "code": "CA",
+        "country": "USA",
+        "raw": "Long Beach, CA"
+      }
+    },
+    {
+      "id": "valkyrie",
+      "name": "Valkyrie",
+      "team": "Team VALKYRIE (WC VI-Present) Team Questionable Designs (WC III-WC V)",
+      "from": "Berkeley, CA (BB FaceOffs-Present) Somerville, MA (WC IV-BB: Champions II) Cambridge, MA (WC III)",
+      "origin": {
+        "city": "Berkeley",
+        "region": "California",
+        "code": "CA",
+        "country": "USA",
+        "raw": "Berkeley, CA (BB FaceOffs-Present) Somerville, MA (WC IV-BB: Champions II) Cambridge, MA (WC III)"
+      }
+    },
+    {
+      "id": "skorpios",
+      "name": "Skorpios",
+      "team": "Bot Bash Party Crew (formerly Offbeat Robotics)",
+      "from": "Moraga, CA",
+      "origin": {
+        "city": "Moraga",
+        "region": "California",
+        "code": "CA",
+        "country": "USA",
+        "raw": "Moraga, CA"
+      }
+    },
+    {
+      "id": "madcatter",
+      "name": "MadCatter",
+      "team": "Team Bad Kitty",
+      "from": "Pomona, CA",
+      "origin": {
+        "city": "Pomona",
+        "region": "California",
+        "code": "CA",
+        "country": "USA",
+        "raw": "Pomona, CA"
+      }
+    },
+    {
+      "id": "magnitude",
+      "name": "Magnitude",
+      "team": "Team Wazio",
+      "from": "Parker, CO",
+      "origin": {
+        "city": "Parker",
+        "region": "Colorado",
+        "code": "CO",
+        "country": "USA",
+        "raw": "Parker, CO"
+      }
+    },
+    {
+      "id": "disarray",
+      "name": "Disarray",
+      "team": "Wildcat Robotics (a.k.a. Team 22037)",
+      "from": "Tucson, AZ",
+      "origin": {
+        "city": "Tucson",
+        "region": "Arizona",
+        "code": "AZ",
+        "country": "USA",
+        "raw": "Tucson, AZ"
+      }
+    },
+    {
+      "id": "tombstone",
+      "name": "Tombstone",
+      "team": "Hardcore Robotics",
+      "from": null,
+      "origin": null
+    },
+    {
+      "id": "copperhead",
+      "name": "Copperhead",
+      "team": "Team Copperhead (formerly Caustic Creations)",
+      "from": "Denver, CO",
+      "origin": {
+        "city": "Denver",
+        "region": "Colorado",
+        "code": "CO",
+        "country": "USA",
+        "raw": "Denver, CO"
+      }
+    },
+    {
+      "id": "the-twins",
+      "name": "The Twins",
+      "team": "Seems Reasonable Robotics",
+      "from": "Mountain View, CA",
+      "origin": {
+        "city": "Mountain View",
+        "region": "California",
+        "code": "CA",
+        "country": "USA",
+        "raw": "Mountain View, CA"
+      }
+    },
+    {
+      "id": "cobalt",
+      "name": "Cobalt",
+      "team": "Robotic Death Company (WC VI-Present) Team Carbide (WC II, WC IV)",
+      "from": "Oceanside, CA (previously Bromsgrove, UK)",
+      "origin": {
+        "city": "Oceanside",
+        "region": "California",
+        "code": "CA",
+        "country": "USA",
+        "raw": "Oceanside, CA (previously Bromsgrove, UK)"
+      }
+    },
+    {
+      "id": "jackpot",
+      "name": "JackPot",
+      "team": "Vegas Combat Robotics",
+      "from": "Las Vegas, NV",
+      "origin": {
+        "city": "Las Vegas",
+        "region": "Nevada",
+        "code": "NV",
+        "country": "USA",
+        "raw": "Las Vegas, NV"
+      }
+    },
+    {
+      "id": "malice",
+      "name": "Malice",
+      "team": "Team Malice",
+      "from": "San Jose, CA",
+      "origin": {
+        "city": "San Jose",
+        "region": "California",
+        "code": "CA",
+        "country": "USA",
+        "raw": "San Jose, CA"
+      }
+    },
+    {
+      "id": "golden-fury",
+      "name": "Golden Fury",
+      "team": "PY Roboticzs",
+      "from": "Chennai, India (BB Pro League) Pondicherry, India (WC V)",
+      "origin": {
+        "city": "Chennai",
+        "region": "India",
+        "code": null,
+        "country": "India",
+        "raw": "Chennai, India (BB Pro League) Pondicherry, India (WC V)"
+      }
+    },
+    {
+      "id": "deathroll",
+      "name": "DeathRoll",
+      "team": "Team DeathRoll",
+      "from": "Brisbane, Australia",
+      "origin": {
+        "city": "Brisbane",
+        "region": "Australia",
+        "code": null,
+        "country": "Australia",
+        "raw": "Brisbane, Australia"
+      }
+    },
+    {
+      "id": "end-game",
+      "name": "End Game",
+      "team": "Team End Game (formerly OYES Robotics)",
+      "from": "Auckland, AUK, New Zealand",
+      "origin": {
+        "city": "AUK",
+        "region": "New Zealand",
+        "code": null,
+        "country": "New Zealand",
+        "raw": "Auckland, AUK, New Zealand"
+      }
+    },
+    {
+      "id": "huge",
+      "name": "HUGE",
+      "team": "Team HUGE",
+      "from": "South Windsor, CT",
+      "origin": {
+        "city": "South Windsor",
+        "region": "Connecticut",
+        "code": "CT",
+        "country": "USA",
+        "raw": "South Windsor, CT"
+      }
+    },
+    {
+      "id": "minotaur",
+      "name": "Minotaur",
+      "team": "Team RioBotz",
+      "from": "Rio de Janeiro, RJ, Brazil",
+      "origin": {
+        "city": "Rio de Janeiro",
+        "region": "Rio de Janeiro",
+        "code": "RJ",
+        "country": "Brazil",
+        "raw": "Rio de Janeiro, RJ, Brazil"
+      }
+    },
+    {
+      "id": "bloodsport",
+      "name": "Bloodsport",
+      "team": "Bots 'n' Stuff Robotics",
+      "from": "Cambridge, MA",
+      "origin": {
+        "city": "Cambridge",
+        "region": "Massachusetts",
+        "code": "MA",
+        "country": "USA",
+        "raw": "Cambridge, MA"
+      }
+    },
+    {
+      "id": "hypershock",
+      "name": "HyperShock",
+      "team": "Team HyperShock (formerly Shenanigans & Co.)",
+      "from": "Miami, FL",
+      "origin": {
+        "city": "Miami",
+        "region": "Florida",
+        "code": "FL",
+        "country": "USA",
+        "raw": "Miami, FL"
+      }
+    },
+    {
+      "id": "witch-doctor",
+      "name": "Witch Doctor",
+      "team": "Team Witch Doctor (formerly Busted Nuts Robotics)",
+      "from": "Miami, FL",
+      "origin": {
+        "city": "Miami",
+        "region": "Florida",
+        "code": "FL",
+        "country": "USA",
+        "raw": "Miami, FL"
+      }
+    },
+    {
+      "id": "switchback",
+      "name": "Switchback",
+      "team": "Team Midnight Invention",
+      "from": "Dallas, TX",
+      "origin": {
+        "city": "Dallas",
+        "region": "Texas",
+        "code": "TX",
+        "country": "USA",
+        "raw": "Dallas, TX"
+      }
+    },
+    {
+      "id": "ribbot",
+      "name": "Ribbot",
+      "team": "Team Ribbot (formerly Team WPI)",
+      "from": "Boston, MA",
+      "origin": {
+        "city": "Boston",
+        "region": "Massachusetts",
+        "code": "MA",
+        "country": "USA",
+        "raw": "Boston, MA"
+      }
+    },
+    {
+      "id": "orbitron",
+      "name": "Orbitron",
+      "team": "Team Orbitron",
+      "from": "Waterloo, ON, Canada",
+      "origin": {
+        "city": "Waterloo",
+        "region": "Ontario",
+        "code": "ON",
+        "country": "Canada",
+        "raw": "Waterloo, ON, Canada"
+      }
+    }
+  ],
+  "byRegion": {
+    "California": [
+      "Terrortops",
+      "Valkyrie",
+      "Skorpios",
+      "MadCatter",
+      "The Twins",
+      "Cobalt",
+      "Malice"
+    ],
+    "Arizona": [
+      "Manta",
+      "Disarray"
+    ],
+    "Colorado": [
+      "Magnitude",
+      "Copperhead"
+    ],
+    "Massachusetts": [
+      "Bloodsport",
+      "Ribbot"
+    ],
+    "Florida": [
+      "HyperShock",
+      "Witch Doctor"
+    ],
+    "Nevada": [
+      "JackPot"
+    ],
+    "India": [
+      "Golden Fury"
+    ],
+    "Australia": [
+      "DeathRoll"
+    ],
+    "New Zealand": [
+      "End Game"
+    ],
+    "Connecticut": [
+      "HUGE"
+    ],
+    "Brazil": [
+      "Minotaur"
+    ],
+    "Texas": [
+      "Switchback"
+    ],
+    "Canada": [
+      "Orbitron"
+    ]
+  },
+  "byCountry": {
+    "USA": [
+      "Manta",
+      "Terrortops",
+      "Valkyrie",
+      "Skorpios",
+      "MadCatter",
+      "Magnitude",
+      "Disarray",
+      "Copperhead",
+      "The Twins",
+      "Cobalt",
+      "JackPot",
+      "Malice",
+      "HUGE",
+      "Bloodsport",
+      "HyperShock",
+      "Witch Doctor",
+      "Switchback",
+      "Ribbot"
+    ],
+    "India": [
+      "Golden Fury"
+    ],
+    "Australia": [
+      "DeathRoll"
+    ],
+    "New Zealand": [
+      "End Game"
+    ],
+    "Brazil": [
+      "Minotaur"
+    ],
+    "Canada": [
+      "Orbitron"
+    ]
+  }
+}

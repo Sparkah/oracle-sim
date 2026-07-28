@@ -47,8 +47,9 @@ node tools/qa.cjs                # headless browser test (needs the server runni
 | --- | --- | --- |
 | battlebots.fandom.com | Web Unlocker | 25 pages, 24 bots, 23 fights |
 | x.com | Scraper API dataset | 40 posts, 10 bots mentioned |
-| youtube.com | Scraper API dataset | 470 comments over 15 episode videos, 21 bots mentioned |
+| youtube.com | Scraper API dataset | 3,971 comments over 77 episode videos, all 24 bots mentioned |
 | reddit.com | Scraper API dataset | 497 r/battlebots posts, 16 bots mentioned |
+| competitor origins | (derived, 0 requests) | 23 of 24 teams located across 6 countries |
 | gamma-api.polymarket.com | Web Unlocker | live markets; no BattleBots market exists |
 
 Nothing is hand-entered. There are no authored power ratings anywhere in the codebase - every

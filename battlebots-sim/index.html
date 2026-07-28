@@ -27,6 +27,7 @@
   <button class="tab on" data-view="arena" role="tab">ARENA</button>
   <button class="tab" data-view="backtest" role="tab">BACK-TEST</button>
   <button class="tab" data-view="meta" role="tab">WEAPON META</button>
+  <button class="tab" data-view="origins" role="tab">ORIGINS</button>
   <button class="tab" data-view="poly" role="tab">POLYMARKET</button>
   <button class="tab" data-view="data" role="tab">DATA</button>
 </nav>
@@ -175,6 +176,25 @@
 </section>
 
 <!-- ------------------------------------------------------------------- DATA -->
+<!-- ---------------------------------------------------------------- ORIGINS -->
+<section class="view" id="view-origins">
+  <h2 class="vh">WHERE THE FIELD COMES FROM</h2>
+  <p class="vsub" id="geoMeta">loading...</p>
+  <p class="pnote">Read off the <code>from=</code> field of each competitor's infobox, on the same
+    25 pages as the roster - so this cost zero extra requests. Note what it is and is not: this is
+    where the <em>teams</em> are, not where the audience is.</p>
+  <div class="cols">
+    <div class="card">
+      <h3>BY REGION</h3>
+      <div id="geoBars" class="geobars"></div>
+    </div>
+    <div class="card">
+      <h3>EVERY COMPETITOR</h3>
+      <div class="scroll"><table class="tbl" id="geoTable"></table></div>
+    </div>
+  </div>
+</section>
+
 <!-- --------------------------------------------------------------- POLYMARKET -->
 <section class="view" id="view-poly">
   <h2 class="vh">PREDICTION MARKET PORT</h2>
