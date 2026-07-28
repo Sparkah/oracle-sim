@@ -1,0 +1,1 @@
+- 2026-07-28 19:28  New 3D arena: plays back the same bout timeline as the 2D sim, with four CC0 rigged Quaternius mechs, per-weapon rigs, sparks and a winner card

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pro League Oracle - BattleBots fight model</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23e8503a'/%3E%3Cpath d='M16 5l3.2 6.6 7.3 1-5.3 5.1 1.3 7.2L16 21.5 9.5 24.9l1.3-7.2L5.5 12.6l7.3-1z' fill='%23ffb020'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="brand">
+    <span class="mark"></span>
+    <div>
+      <h1>PRO LEAGUE ORACLE</h1>
+      <p class="sub">A fight model fit on scraped season results, and an arena that plays out what it predicts.</p>
+    </div>
+  </div>
+  <div class="topright">
+    <div id="provenance" class="pill pill-warn">CHECKING DATA</div>
+    <button id="mute" class="ghost" title="Toggle sound" aria-label="Toggle sound">SOUND ON</button>
+  </div>
+</header>
+
+<nav class="tabs" role="tablist">
+  <button class="tab on" data-view="arena" role="tab">ARENA</button>
+  <button class="tab" data-view="backtest" role="tab">BACK-TEST</button>
+  <button class="tab" data-view="meta" role="tab">WEAPON META</button>
+  <button class="tab" data-view="poly" role="tab">POLYMARKET</button>
+  <button class="tab" data-view="data" role="tab">DATA</button>
+</nav>
+
+<!-- ------------------------------------------------------------------ ARENA -->
+<section class="view on" id="view-arena">
+  <div class="picker">
+    <div class="side">
+      <label for="selA">RED CORNER</label>
+      <select id="selA"></select>
+      <div class="statline" id="statA"></div>
+    </div>
+    <div class="mid">
+      <button id="fight" class="fight">RUN FIGHT</button>
+      <button id="rand" class="ghost small">RANDOM</button>
+    </div>
+    <div class="side">
+      <label for="selB">BLUE CORNER</label>
+      <select id="selB"></select>
+      <div class="statline" id="statB"></div>
+    </div>
+  </div>
+
+  <!-- Stackable prediction layers. Each one is a log-odds adjustment on top of the base
+       model, so they compose additively and any subset can be switched off. -->
+  <div class="layers" id="layers">
+    <span class="ly-title">LAYERS</span>
+    <label class="ly on"><input type="checkbox" id="lyBase" checked disabled><span>BASE MODEL</span><em>record + weapon matchup</em></label>
+    <label class="ly"><input type="checkbox" id="lyBuzz"><span>X BUZZ</span><em id="lyBuzzSub">scraped mentions</em></label>
+    <label class="ly"><input type="checkbox" id="lyPoly"><span>POLYMARKET</span><em id="lyPolySub">live lookup</em></label>
+    <label class="ly"><input type="checkbox" id="lyUser"><span>YOUR CALL</span><em>manual nudge</em></label>
+    <input type="range" id="lyUserVal" min="-100" max="100" value="0" disabled />
+    <span class="ly-out" id="lyOut"></span>
+  </div>
+
+  <div class="predbar" id="predbar">
+    <div class="pb-fill" id="pbFill"></div>
+    <div class="pb-label pb-a" id="pbA">50%</div>
+    <div class="pb-label pb-b" id="pbB">50%</div>
+  </div>
+  <p class="predcap" id="predcap">Model prediction before the bout. No bias term, so the two sides always sum to 100%.</p>
+
+  <!-- Head to head. Two humans, one pot, the same forecast in front of both of them.
+       This is deliberately NOT betting against the model: the bout is generated from the
+       model's own probability, so a house built on that model would be betting on its own
+       coin. Player versus player is a fair game because both sides face the identical fight
+       and the identical information. -->
+  <div class="book" id="book">
+    <div class="book-head">
+      <span class="book-title">HEAD TO HEAD</span>
+      <span class="book-sub">two players, one pot - the forecast is information, not a counterparty</span>
+      <span class="bank">POT <b id="pot">0</b></span>
+    </div>
+    <div class="book-row">
+      <button class="odds" id="oddsA" data-side="a">
+        <span class="o-tag">RED CORNER</span>
+        <span class="o-name" id="oNameA">-</span>
+        <span class="o-price" id="oPriceA">-</span>
+        <span class="o-edge" id="oEdgeA"></span>
+        <input class="pname" id="pnameA" placeholder="player 1" maxlength="14" />
+        <span class="o-bank" id="obankA">1000</span>
+      </button>
+      <div class="stake-wrap">
+        <label for="stake">ANTE</label>
+        <input id="stake" type="number" min="1" step="10" value="100" />
+        <button class="ghost small" id="betClear">RESET</button>
+      </div>
+      <button class="odds" id="oddsB" data-side="b">
+        <span class="o-tag">BLUE CORNER</span>
+        <span class="o-name" id="oNameB">-</span>
+        <span class="o-price" id="oPriceB">-</span>
+        <span class="o-edge" id="oEdgeB"></span>
+        <input class="pname" id="pnameB" placeholder="player 2" maxlength="14" />
+        <span class="o-bank" id="obankB">1000</span>
+      </button>
+    </div>
+    <p class="book-note" id="bookNote">Name both players, set the ante, then run the fight. Winner takes the pot.</p>
+    <div class="lb" id="lbWrap">
+      <h4>LEADERBOARD</h4>
+      <table class="lb-t" id="lbTable"></table>
+    </div>
+  </div>
+
+  <div class="arena-wrap">
+    <div class="hpbar">
+      <div class="hp hp-a"><span class="nm" id="hpNameA">-</span><div class="track"><i id="hpFillA"></i></div><span class="v" id="hpValA">100</span></div>
+      <div class="clock" id="clock">0:00</div>
+      <div class="hp hp-b"><span class="v" id="hpValB">100</span><div class="track rtl"><i id="hpFillB"></i></div><span class="nm" id="hpNameB">-</span></div>
+    </div>
+    <canvas id="arena"></canvas>
+    <div class="result" id="result" hidden></div>
+  </div>
+
+  <div class="feedwrap">
+    <h3>COMMENTARY</h3>
+    <ul id="feed" class="feed"></ul>
+  </div>
+</section>
+
+<!-- --------------------------------------------------------------- BACKTEST -->
+<section class="view" id="view-backtest">
+  <div class="kpis">
+    <div class="kpi big"><b id="kAcc">-</b><span>leave-one-out accuracy</span><em id="kAccSub"></em></div>
+    <div class="kpi"><b id="kBase">-</b><span>record-only baseline</span><em>back the better record</em></div>
+    <div class="kpi"><b id="kLift">-</b><span>lift over baseline</span><em id="kLiftSub"></em></div>
+    <div class="kpi"><b id="kBrier">-</b><span>Brier score</span><em>0.25 = always saying 50/50</em></div>
+    <div class="kpi"><b id="kMc">-</b><span>McNemar p, vs baseline</span><em id="kMcSub"></em></div>
+  </div>
+
+  <div class="note" id="btNote"></div>
+
+  <div class="cols">
+    <div class="card">
+      <h3>CALIBRATION</h3>
+      <p class="cap">When it claims 80%, does it happen 80% of the time? Bars are what actually happened; the line is what was claimed.</p>
+      <div id="calib" class="calib"></div>
+    </div>
+    <div class="card">
+      <h3>EVERY FIGHT, RANKED BY CONFIDENCE</h3>
+      <p class="cap">Green means the model called it. Each row was predicted by a model refit from scratch without that fight.</p>
+      <div class="scroll"><table class="tbl" id="btTable"></table></div>
+    </div>
+  </div>
+</section>
+
+<!-- ------------------------------------------------------------------- META -->
+<section class="view" id="view-meta">
+  <div class="cols">
+    <div class="card">
+      <h3>WEAPON MATCHUP</h3>
+      <p class="cap">Row beats column, as a win rate shrunk toward 50/50 by sample size. Hover a cell for the raw record.</p>
+      <div id="heat" class="heat"></div>
+      <div class="legend"><span class="lg lg-lo"></span>column favoured<span class="lg lg-mid"></span>even<span class="lg lg-hi"></span>row favoured</div>
+    </div>
+    <div class="card">
+      <h3>POWER RANKING</h3>
+      <p class="cap">Mean win probability against the whole field. Falls straight out of the model, so there is no second scoring system to justify.</p>
+      <div class="scroll"><table class="tbl" id="rankTable"></table></div>
+    </div>
+  </div>
+  <div class="card">
+    <h3>WHAT THE MODEL LEARNED</h3>
+    <p class="cap">Standardised logistic weights. Positive means the feature favours the bot that has more of it.</p>
+    <div id="weights" class="weights"></div>
+  </div>
+</section>
+
+<!-- ------------------------------------------------------------------- DATA -->
+<!-- --------------------------------------------------------------- POLYMARKET -->
+<section class="view" id="view-poly">
+  <h2 class="vh">PREDICTION MARKET PORT</h2>
+  <p class="vsub" id="polyMeta">loading...</p>
+
+  <p class="pnote" id="polyNone"></p>
+
+  <h3 class="ph">PRO LEAGUE, IN POLYMARKET FORMAT <span class="tagprop">PROPOSED - NOT TRADED</span></h3>
+  <p class="pnote">The same 24 scraped bots, emitted as Polymarket market objects priced by our
+    model. This is a listing payload, ready to post. The prices are the model's opinion, not a
+    market's - nobody has traded these and the label says so.</p>
+  <div id="polyProp" class="mkts"></div>
+</section>
+
+<section class="view" id="view-data">
+  <div class="card">
+    <h3>DATA LINEAGE</h3>
+    <p class="cap">Every source, which Bright Data product fetched it, and what it cost us. The
+      two refusals are listed on purpose - a lineage that only shows what worked is a sales
+      pitch, not a lineage.</p>
+    <table class="tbl lin" id="lineage"></table>
+
+    <h3>PROVENANCE</h3>
+    <div id="dataMeta" class="kv"></div>
+  </div>
+  <div class="card">
+    <h3>INTEGRITY CHECKS</h3>
+    <p class="cap">Run against the loaded files at boot. A scraper that half-works is worse than one that fails loudly.</p>
+    <ul id="checks" class="checks"></ul>
+  </div>
+  <div class="card">
+    <h3>FAN CHATTER</h3>
+    <p class="cap">Mentions and reach scraped from X, against on-field results. Reach is measured; tone is not - the X Posts dataset returns engagement counts, not sentiment, so guessing a mood score here would be inventing data. The interesting row is a bot talked about a lot that is not winning.</p>
+    <div class="scroll"><table class="tbl" id="chatterTable"></table></div>
+  </div>
+</section>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>

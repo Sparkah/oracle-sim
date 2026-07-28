@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pro League Oracle - 3D Arena</title>
+<link rel="icon" href="favicon.png">
+<link rel="stylesheet" href="styles.css">
+
+<!--
+  Three.js from a CDN, no build step. The bare "three" specifier is preserved by unpkg's
+  raw file serving, so the addons under examples/jsm resolve to the SAME module instance
+  the app imports - which is the whole reason this is an import map and not five script tags.
+
+  If the venue wifi dies, swap these two lines for the vendored copies:
+    "three":          "./assets/vendor/three.module.js",
+    "three/addons/":  "./assets/vendor/jsm/"
+-->
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.169.0/build/three.module.js",
+    "three/addons/": "https://unpkg.com/three@0.169.0/examples/jsm/"
+  }
+}
+</script>
+</head>
+<body>
+
+<header class="top">
+  <div class="brand">
+    <span class="mark">PRO LEAGUE ORACLE</span>
+    <span class="sub">3D ARENA</span>
+  </div>
+  <div class="src" id="srcBadge">loading data</div>
+</header>
+
+<main class="wrap">
+
+  <!-- ------------------------------------------------------------------ picker -->
+  <section class="picker" id="picker">
+    <div class="side side-a">
+      <label for="selA">RED CORNER</label>
+      <select id="selA"></select>
+      <div class="meta" id="metaA"></div>
+    </div>
+
+    <div class="mid">
+      <div class="oddsbar" title="Model probability before anything happens">
+        <div class="oddsfill" id="oddsFill"></div>
+        <div class="oddstext"><span id="oddsA">50%</span><span id="oddsB">50%</span></div>
+      </div>
+      <button id="runBtn" class="run" disabled>LOADING&hellip;</button>
+      <button id="swapBtn" class="ghost" title="Swap corners">&#8646; SWAP</button>
+    </div>
+
+    <div class="side side-b">
+      <label for="selB">BLUE CORNER</label>
+      <select id="selB"></select>
+      <div class="meta" id="metaB"></div>
+    </div>
+  </section>
+
+  <!-- ------------------------------------------------------------------- arena -->
+  <section class="stage">
+    <canvas id="gl"></canvas>
+
+    <div class="hud" id="hud" hidden>
+      <div class="hp hp-a">
+        <div class="hpname"><b id="hpNameA">A</b><i id="hpValA">100</i></div>
+        <div class="hptrack"><span id="hpBarA"></span></div>
+      </div>
+      <div class="clock" id="clock">0:00</div>
+      <div class="hp hp-b">
+        <div class="hpname"><i id="hpValB">100</i><b id="hpNameB">B</b></div>
+        <div class="hptrack rtl"><span id="hpBarB"></span></div>
+      </div>
+    </div>
+
+    <div class="loadmask" id="loadMask">
+      <div class="spin"></div>
+      <div class="loadtext" id="loadText">building arena</div>
+    </div>
+
+    <div class="card" id="card" hidden>
+      <div class="cardwin" id="cardWin">-</div>
+      <div class="cardmethod" id="cardMethod">-</div>
+      <div class="cardcall" id="cardCall">-</div>
+      <button class="ghost" id="againBtn">RUN ANOTHER</button>
+    </div>
+
+    <button class="mute" id="muteBtn" title="Toggle sound">SOUND ON</button>
+  </section>
+
+  <!-- -------------------------------------------------------------- commentary -->
+  <section class="feedwrap">
+    <ul class="feed" id="feed">
+      <li class="end">Pick two bots and run the fight. The 3D view plays back the exact bout
+        the model committed to - same seed, same winner, same timeline as the 2D arena.</li>
+    </ul>
+  </section>
+
+</main>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+- 2026-07-28 18:25  Context reloaded at venue: full headless QA green after fixing a screenshot hang; default demo matchup is one the model calls wrong
+- 2026-07-28 18:42  Live Pro League data scraped: 24 real bots, 23 aired fights, weapon classes off 24 robot pages
+- 2026-07-28 19:06  Live Bright Data scrape + betting book + per-bot 3D-style silhouettes and 24 distinct liveries
+- 2026-07-28 19:32  Head-to-head PvP betting + leaderboard replaces the circular house book; README numbers corrected to real scraped season
+- 2026-07-28 19:36  X fan chatter live via Bright Data Scraper API - 40 posts, 10 bots mentioned
+- 2026-07-28 19:38  X buzz layer + stackable prediction layers; Polymarket trimmed to BattleBots only
+- 2026-07-28 19:44  Data lineage panel: every source, which Bright Data product, and the two refusals
+- 2026-07-28 19:48  Polymarket added as an honest live-lookup layer that reports no market rather than substituting our own prices

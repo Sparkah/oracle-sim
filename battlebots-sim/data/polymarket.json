@@ -1,0 +1,610 @@
+{
+  "_meta": {
+    "source": "polymarket-gamma",
+    "sourceLabel": "gamma-api.polymarket.com via Bright Data",
+    "route": "brightdata",
+    "fetchedAt": "2026-07-28T18:13:36.899Z",
+    "vig": 0.045,
+    "note": "live[] are real open Polymarket markets. proposed[] are OUR model prices in Polymarket market format - no BattleBots market exists on Polymarket, these are a listing proposal, not traded prices."
+  },
+  "live": [
+    {
+      "id": "665374",
+      "question": "Will the U.S. invade Iran before 2027?",
+      "slug": "will-the-us-invade-iran-before-2027",
+      "outcomes": [
+        "Yes",
+        "No"
+      ],
+      "prices": [
+        0.215,
+        0.785
+      ],
+      "impliedYes": 0.215,
+      "oddsYes": 4.651162790697675,
+      "oddsNo": 1.2738853503184713,
+      "volume": 48781501.98720581,
+      "liquidity": 720009.7501,
+      "endDate": "2026-12-31T00:00:00Z",
+      "url": "https://polymarket.com/market/will-the-us-invade-iran-before-2027"
+    },
+    {
+      "id": "1654958",
+      "question": "Will there be no change in Fed interest rates after the July 2026 meeting?",
+      "slug": "will-there-be-no-change-in-fed-interest-rates-after-the-july-2026-meeting",
+      "outcomes": [
+        "Yes",
+        "No"
+      ],
+      "prices": [
+        0.7935,
+        0.2065
+      ],
+      "impliedYes": 0.7935,
+      "oddsYes": 1.260239445494644,
+      "oddsNo": 4.842615012106537,
+      "volume": 32321671.757353827,
+      "liquidity": 343604.76663,
+      "endDate": "2026-07-29T00:00:00Z",
+      "url": "https://polymarket.com/market/will-there-be-no-change-in-fed-interest-rates-after-the-july-2026-meeting"
+    },
+    {
+      "id": "559652",
+      "question": "Will Gavin Newsom win the 2028 Democratic presidential nomination?",
+      "slug": "will-gavin-newsom-win-the-2028-democratic-presidential-nomination-568",
+      "outcomes": [
+        "Yes",
+        "No"
+      ],
+      "prices": [
+        0.1935,
+        0.8065
+      ],
+      "impliedYes": 0.1935,
+      "oddsYes": 5.167958656330749,
+      "oddsNo": 1.2399256044637321,
+      "volume": 26593855.611314286,
+      "liquidity": 358819.3828,
+      "endDate": "2028-11-07T00:00:00Z",
+      "url": "https://polymarket.com/market/will-gavin-newsom-win-the-2028-democratic-presidential-nomination-568"
+    },
+    {
+      "id": "1654959",
+      "question": "Will the Fed increase interest rates by 25 bps after the July 2026 meeting?",
+      "slug": "will-the-fed-increase-interest-rates-by-25-bps-after-the-july-2026-meeting",
+      "outcomes": [
+        "Yes",
+        "No"
+      ],
+      "prices": [
+        0.2035,
+        0.7965
+      ],
+      "impliedYes": 0.2035,
+      "oddsYes": 4.914004914004915,
+      "oddsNo": 1.2554927809165097,
+      "volume": 22419081.228954203,
+      "liquidity": 232382.76259,
+      "endDate": "2026-07-29T00:00:00Z",
+      "url": "https://polymarket.com/market/will-the-fed-increase-interest-rates-by-25-bps-after-the-july-2026-meeting"
+    },
+    {
+      "id": "561229",
+      "question": "Will JD Vance win the 2028 US Presidential Election?",
+      "slug": "will-jd-vance-win-the-2028-us-presidential-election",
+      "outcomes": [
+        "Yes",
+        "No"
+      ],
+      "prices": [
+        0.2005,
+        0.7995
+      ],
+      "impliedYes": 0.2005,
+      "oddsYes": 4.987531172069825,
+      "oddsNo": 1.2507817385866167,
+      "volume": 14918221.002854124,
+      "liquidity": 485828.3434,
+      "endDate": "2028-11-07T00:00:00Z",
+      "url": "https://polymarket.com/market/will-jd-vance-win-the-2028-us-presidential-election"
+    },
+    {
+      "id": "561974",
+      "question": "Will J.D. Vance win the 2028 Republican presidential nomination?",
+      "slug": "will-jd-vance-win-the-2028-republican-presidential-nomination",
+      "outcomes": [
+        "Yes",
+        "No"
+      ],
+      "prices": [
+        0.4295,
+        0.5705
+      ],
+      "impliedYes": 0.4295,
+      "oddsYes": 2.3282887077997674,
+      "oddsNo": 1.7528483786152498,
+      "volume": 14726717.577128112,
+      "liquidity": 382604.38812,
+      "endDate": "2028-11-07T00:00:00Z",
+      "url": "https://polymarket.com/market/will-jd-vance-win-the-2028-republican-presidential-nomination"
+    },
+    {
+      "id": "559653",
+      "question": "Will Alexandria Ocasio-Cortez win the 2028 Democratic presidential nomination?",
+      "slug": "will-alexandria-ocasio-cortez-win-the-2028-democratic-presidential-nomination-653",
+      "outcomes": [
+        "Yes",
+        "No"
+      ],
+      "prices": [
+        0.1265,
+        0.8735
+      ],
+      "impliedYes": 0.1265,
+      "oddsYes": 7.905138339920948,
+      "oddsNo": 1.1448196908986836,
+      "volume": 14063858.408344127,
+      "liquidity": 306934.24021,
+      "endDate": "2028-11-07T00:00:00Z",
+      "url": "https://polymarket.com/market/will-alexandria-ocasio-cortez-win-the-2028-democratic-presidential-nomination-653"
+    }
+  ],
+  "proposed": [
+    {
+      "question": "Will Manta beat Terrortops in BattleBots Pro League 2026?",
+      "slug": "battlebots-pro-league-manta-vs-terrortops",
+      "outcomes": [
+        "Yes",
+        "No"
+      ],
+      "outcomePrices": [
+        "0.909",
+        "0.091"
+      ],
+      "oddsYes": 1.05,
+      "oddsNo": 10.552,
+      "a": "manta",
+      "b": "terrortops",
+      "aName": "Manta",
+      "bName": "Terrortops",
+      "modelProb": 0.9095
+    },
+    {
+      "question": "Will Valkyrie beat Skorpios in BattleBots Pro League 2026?",
+      "slug": "battlebots-pro-league-valkyrie-vs-skorpios",
+      "outcomes": [
+        "Yes",
+        "No"
+      ],
+      "outcomePrices": [
+        "0.091",
+        "0.909"
+      ],
+      "oddsYes": 10.552,
+      "oddsNo": 1.05,
+      "a": "valkyrie",
+      "b": "skorpios",
+      "aName": "Valkyrie",
+      "bName": "Skorpios",
+      "modelProb": 0.0905
+    },
+    {
+      "question": "Will Skorpios beat MadCatter in BattleBots Pro League 2026?",
+      "slug": "battlebots-pro-league-skorpios-vs-madcatter",
+      "outcomes": [
+        "Yes",
+        "No"
+      ],
+      "outcomePrices": [
+        "0.500",
+        "0.500"
+      ],
+      "oddsYes": 1.91,
+      "oddsNo": 1.91,
+      "a": "skorpios",
+      "b": "madcatter",
+      "aName": "Skorpios",
+      "bName": "MadCatter",
+      "modelProb": 0.5
+    },
+    {
+      "question": "Will Tombstone beat Copperhead in BattleBots Pro League 2026?",
+      "slug": "battlebots-pro-league-tombstone-vs-copperhead",
+      "outcomes": [
+        "Yes",
+        "No"
+      ],
+      "outcomePrices": [
+        "0.065",
+        "0.935"
+      ],
+      "oddsYes": 14.63,
+      "oddsNo": 1.022,
+      "a": "tombstone",
+      "b": "copperhead",
+      "aName": "Tombstone",
+      "bName": "Copperhead",
+      "modelProb": 0.0653
+    },
+    {
+      "question": "Will Copperhead beat The Twins in BattleBots Pro League 2026?",
+      "slug": "battlebots-pro-league-copperhead-vs-the-twins",
+      "outcomes": [
+        "Yes",
+        "No"
+      ],
+      "outcomePrices": [
+        "0.909",
+        "0.091"
+      ],
+      "oddsYes": 1.05,
+      "oddsNo": 10.552,
+      "a": "copperhead",
+      "b": "the-twins",
+      "aName": "Copperhead",
+      "bName": "The Twins",
+      "modelProb": 0.9095
+    },
+    {
+      "question": "Will Cobalt beat JackPot in BattleBots Pro League 2026?",
+      "slug": "battlebots-pro-league-cobalt-vs-jackpot",
+      "outcomes": [
+        "Yes",
+        "No"
+      ],
+      "outcomePrices": [
+        "0.091",
+        "0.909"
+      ],
+      "oddsYes": 10.552,
+      "oddsNo": 1.05,
+      "a": "cobalt",
+      "b": "jackpot",
+      "aName": "Cobalt",
+      "bName": "JackPot",
+      "modelProb": 0.0905
+    },
+    {
+      "question": "Will JackPot beat Malice in BattleBots Pro League 2026?",
+      "slug": "battlebots-pro-league-jackpot-vs-malice",
+      "outcomes": [
+        "Yes",
+        "No"
+      ],
+      "outcomePrices": [
+        "0.588",
+        "0.412"
+      ],
+      "oddsYes": 1.625,
+      "oddsNo": 2.316,
+      "a": "jackpot",
+      "b": "malice",
+      "aName": "JackPot",
+      "bName": "Malice",
+      "modelProb": 0.5876
+    },
+    {
+      "question": "Will Malice beat Golden Fury in BattleBots Pro League 2026?",
+      "slug": "battlebots-pro-league-malice-vs-golden-fury",
+      "outcomes": [
+        "Yes",
+        "No"
+      ],
+      "outcomePrices": [
+        "0.412",
+        "0.588"
+      ],
+      "oddsYes": 2.316,
+      "oddsNo": 1.625,
+      "a": "malice",
+      "b": "golden-fury",
+      "aName": "Malice",
+      "bName": "Golden Fury",
+      "modelProb": 0.4124
+    },
+    {
+      "question": "Will DeathRoll beat End Game in BattleBots Pro League 2026?",
+      "slug": "battlebots-pro-league-deathroll-vs-end-game",
+      "outcomes": [
+        "Yes",
+        "No"
+      ],
+      "outcomePrices": [
+        "0.500",
+        "0.500"
+      ],
+      "oddsYes": 1.91,
+      "oddsNo": 1.91,
+      "a": "deathroll",
+      "b": "end-game",
+      "aName": "DeathRoll",
+      "bName": "End Game",
+      "modelProb": 0.5
+    },
+    {
+      "question": "Will End Game beat HUGE in BattleBots Pro League 2026?",
+      "slug": "battlebots-pro-league-end-game-vs-huge",
+      "outcomes": [
+        "Yes",
+        "No"
+      ],
+      "outcomePrices": [
+        "0.091",
+        "0.909"
+      ],
+      "oddsYes": 10.552,
+      "oddsNo": 1.05,
+      "a": "end-game",
+      "b": "huge",
+      "aName": "End Game",
+      "bName": "HUGE",
+      "modelProb": 0.0905
+    },
+    {
+      "question": "Will HyperShock beat Witch Doctor in BattleBots Pro League 2026?",
+      "slug": "battlebots-pro-league-hypershock-vs-witch-doctor",
+      "outcomes": [
+        "Yes",
+        "No"
+      ],
+      "outcomePrices": [
+        "0.500",
+        "0.500"
+      ],
+      "oddsYes": 1.91,
+      "oddsNo": 1.91,
+      "a": "hypershock",
+      "b": "witch-doctor",
+      "aName": "HyperShock",
+      "bName": "Witch Doctor",
+      "modelProb": 0.5
+    },
+    {
+      "question": "Will Witch Doctor beat Switchback in BattleBots Pro League 2026?",
+      "slug": "battlebots-pro-league-witch-doctor-vs-switchback",
+      "outcomes": [
+        "Yes",
+        "No"
+      ],
+      "outcomePrices": [
+        "0.191",
+        "0.809"
+      ],
+      "oddsYes": 4.995,
+      "oddsNo": 1.181,
+      "a": "witch-doctor",
+      "b": "switchback",
+      "aName": "Witch Doctor",
+      "bName": "Switchback",
+      "modelProb": 0.1912
+    },
+    {
+      "question": "Will Switchback beat Ribbot in BattleBots Pro League 2026?",
+      "slug": "battlebots-pro-league-switchback-vs-ribbot",
+      "outcomes": [
+        "Yes",
+        "No"
+      ],
+      "outcomePrices": [
+        "0.588",
+        "0.412"
+      ],
+      "oddsYes": 1.625,
+      "oddsNo": 2.316,
+      "a": "switchback",
+      "b": "ribbot",
+      "aName": "Switchback",
+      "bName": "Ribbot",
+      "modelProb": 0.5876
+    },
+    {
+      "question": "Will Ribbot beat Orbitron in BattleBots Pro League 2026?",
+      "slug": "battlebots-pro-league-ribbot-vs-orbitron",
+      "outcomes": [
+        "Yes",
+        "No"
+      ],
+      "outcomePrices": [
+        "0.968",
+        "0.032"
+      ],
+      "oddsYes": 1.01,
+      "oddsNo": 29.446,
+      "a": "ribbot",
+      "b": "orbitron",
+      "aName": "Ribbot",
+      "bName": "Orbitron",
+      "modelProb": 0.9676
+    },
+    {
+      "question": "Will Valkyrie beat MadCatter in BattleBots Pro League 2026?",
+      "slug": "battlebots-pro-league-valkyrie-vs-madcatter",
+      "outcomes": [
+        "Yes",
+        "No"
+      ],
+      "outcomePrices": [
+        "0.065",
+        "0.935"
+      ],
+      "oddsYes": 14.63,
+      "oddsNo": 1.022,
+      "a": "valkyrie",
+      "b": "madcatter",
+      "aName": "Valkyrie",
+      "bName": "MadCatter",
+      "modelProb": 0.0653
+    },
+    {
+      "question": "Will Skorpios beat Magnitude in BattleBots Pro League 2026?",
+      "slug": "battlebots-pro-league-skorpios-vs-magnitude",
+      "outcomes": [
+        "Yes",
+        "No"
+      ],
+      "outcomePrices": [
+        "0.091",
+        "0.909"
+      ],
+      "oddsYes": 10.552,
+      "oddsNo": 1.05,
+      "a": "skorpios",
+      "b": "magnitude",
+      "aName": "Skorpios",
+      "bName": "Magnitude",
+      "modelProb": 0.0905
+    },
+    {
+      "question": "Will MadCatter beat Disarray in BattleBots Pro League 2026?",
+      "slug": "battlebots-pro-league-madcatter-vs-disarray",
+      "outcomes": [
+        "Yes",
+        "No"
+      ],
+      "outcomePrices": [
+        "0.909",
+        "0.091"
+      ],
+      "oddsYes": 1.05,
+      "oddsNo": 10.552,
+      "a": "madcatter",
+      "b": "disarray",
+      "aName": "MadCatter",
+      "bName": "Disarray",
+      "modelProb": 0.9095
+    },
+    {
+      "question": "Will Magnitude beat Tombstone in BattleBots Pro League 2026?",
+      "slug": "battlebots-pro-league-magnitude-vs-tombstone",
+      "outcomes": [
+        "Yes",
+        "No"
+      ],
+      "outcomePrices": [
+        "0.935",
+        "0.065"
+      ],
+      "oddsYes": 1.022,
+      "oddsNo": 14.63,
+      "a": "magnitude",
+      "b": "tombstone",
+      "aName": "Magnitude",
+      "bName": "Tombstone",
+      "modelProb": 0.9347
+    },
+    {
+      "question": "Will Disarray beat Copperhead in BattleBots Pro League 2026?",
+      "slug": "battlebots-pro-league-disarray-vs-copperhead",
+      "outcomes": [
+        "Yes",
+        "No"
+      ],
+      "outcomePrices": [
+        "0.010",
+        "0.990"
+      ],
+      "oddsYes": 97.405,
+      "oddsNo": 1.01,
+      "a": "disarray",
+      "b": "copperhead",
+      "aName": "Disarray",
+      "bName": "Copperhead",
+      "modelProb": 0.0098
+    },
+    {
+      "question": "Will Tombstone beat The Twins in BattleBots Pro League 2026?",
+      "slug": "battlebots-pro-league-tombstone-vs-the-twins",
+      "outcomes": [
+        "Yes",
+        "No"
+      ],
+      "outcomePrices": [
+        "0.412",
+        "0.588"
+      ],
+      "oddsYes": 2.316,
+      "oddsNo": 1.625,
+      "a": "tombstone",
+      "b": "the-twins",
+      "aName": "Tombstone",
+      "bName": "The Twins",
+      "modelProb": 0.4124
+    },
+    {
+      "question": "Will Cobalt beat Malice in BattleBots Pro League 2026?",
+      "slug": "battlebots-pro-league-cobalt-vs-malice",
+      "outcomes": [
+        "Yes",
+        "No"
+      ],
+      "outcomePrices": [
+        "0.124",
+        "0.876"
+      ],
+      "oddsYes": 7.69,
+      "oddsNo": 1.09,
+      "a": "cobalt",
+      "b": "malice",
+      "aName": "Cobalt",
+      "bName": "Malice",
+      "modelProb": 0.1242
+    },
+    {
+      "question": "Will JackPot beat Golden Fury in BattleBots Pro League 2026?",
+      "slug": "battlebots-pro-league-jackpot-vs-golden-fury",
+      "outcomes": [
+        "Yes",
+        "No"
+      ],
+      "outcomePrices": [
+        "0.500",
+        "0.500"
+      ],
+      "oddsYes": 1.91,
+      "oddsNo": 1.91,
+      "a": "jackpot",
+      "b": "golden-fury",
+      "aName": "JackPot",
+      "bName": "Golden Fury",
+      "modelProb": 0.5
+    },
+    {
+      "question": "Will DeathRoll beat HUGE in BattleBots Pro League 2026?",
+      "slug": "battlebots-pro-league-deathroll-vs-huge",
+      "outcomes": [
+        "Yes",
+        "No"
+      ],
+      "outcomePrices": [
+        "0.091",
+        "0.909"
+      ],
+      "oddsYes": 10.552,
+      "oddsNo": 1.05,
+      "a": "deathroll",
+      "b": "huge",
+      "aName": "DeathRoll",
+      "bName": "HUGE",
+      "modelProb": 0.0905
+    },
+    {
+      "question": "Will End Game beat Minotaur in BattleBots Pro League 2026?",
+      "slug": "battlebots-pro-league-end-game-vs-minotaur",
+      "outcomes": [
+        "Yes",
+        "No"
+      ],
+      "outcomePrices": [
+        "0.500",
+        "0.500"
+      ],
+      "oddsYes": 1.91,
+      "oddsNo": 1.91,
+      "a": "end-game",
+      "b": "minotaur",
+      "aName": "End Game",
+      "bName": "Minotaur",
+      "modelProb": 0.5
+    }
+  ]
+}

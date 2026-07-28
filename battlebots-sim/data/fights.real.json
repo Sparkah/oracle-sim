@@ -1,0 +1,219 @@
+{
+  "_meta": {
+    "source": "battlebots-fandom",
+    "sourceLabel": "battlebots.fandom.com (direct fetch)",
+    "route": "cache",
+    "fetchedAt": "2026-07-28T17:40:19.586Z",
+    "season": "Pro League 2026",
+    "n": 23
+  },
+  "fights": [
+    {
+      "id": "f001",
+      "a": "golden-fury",
+      "b": "deathroll",
+      "winner": "golden-fury",
+      "method": null,
+      "sec": null,
+      "event": "E1"
+    },
+    {
+      "id": "f002",
+      "a": "huge",
+      "b": "hypershock",
+      "winner": "huge",
+      "method": null,
+      "sec": null,
+      "event": "E1"
+    },
+    {
+      "id": "f003",
+      "a": "malice",
+      "b": "end-game",
+      "winner": "malice",
+      "method": null,
+      "sec": null,
+      "event": "E1"
+    },
+    {
+      "id": "f004",
+      "a": "copperhead",
+      "b": "jackpot",
+      "winner": "copperhead",
+      "method": null,
+      "sec": null,
+      "event": "E2"
+    },
+    {
+      "id": "f005",
+      "a": "skorpios",
+      "b": "manta",
+      "winner": "manta",
+      "method": null,
+      "sec": null,
+      "event": "E2"
+    },
+    {
+      "id": "f006",
+      "a": "tombstone",
+      "b": "madcatter",
+      "winner": "madcatter",
+      "method": null,
+      "sec": null,
+      "event": "E2"
+    },
+    {
+      "id": "f007",
+      "a": "magnitude",
+      "b": "disarray",
+      "winner": "magnitude",
+      "method": null,
+      "sec": null,
+      "event": "E3"
+    },
+    {
+      "id": "f008",
+      "a": "valkyrie",
+      "b": "terrortops",
+      "winner": "terrortops",
+      "method": null,
+      "sec": null,
+      "event": "E3"
+    },
+    {
+      "id": "f009",
+      "a": "the-twins",
+      "b": "cobalt",
+      "winner": "the-twins",
+      "method": null,
+      "sec": null,
+      "event": "E4"
+    },
+    {
+      "id": "f010",
+      "a": "minotaur",
+      "b": "bloodsport",
+      "winner": "minotaur",
+      "method": null,
+      "sec": null,
+      "event": "E4"
+    },
+    {
+      "id": "f011",
+      "a": "witch-doctor",
+      "b": "orbitron",
+      "winner": "witch-doctor",
+      "method": null,
+      "sec": null,
+      "event": "E4"
+    },
+    {
+      "id": "f012",
+      "a": "copperhead",
+      "b": "cobalt",
+      "winner": "copperhead",
+      "method": null,
+      "sec": null,
+      "event": "E5"
+    },
+    {
+      "id": "f013",
+      "a": "hypershock",
+      "b": "bloodsport",
+      "winner": "hypershock",
+      "method": null,
+      "sec": null,
+      "event": "E5"
+    },
+    {
+      "id": "f014",
+      "a": "tombstone",
+      "b": "disarray",
+      "winner": "tombstone",
+      "method": null,
+      "sec": null,
+      "event": "E5"
+    },
+    {
+      "id": "f015",
+      "a": "ribbot",
+      "b": "witch-doctor",
+      "winner": "ribbot",
+      "method": null,
+      "sec": null,
+      "event": "E6"
+    },
+    {
+      "id": "f016",
+      "a": "huge",
+      "b": "minotaur",
+      "winner": "huge",
+      "method": null,
+      "sec": null,
+      "event": "E6"
+    },
+    {
+      "id": "f017",
+      "a": "deathroll",
+      "b": "malice",
+      "winner": "deathroll",
+      "method": null,
+      "sec": null,
+      "event": "E6"
+    },
+    {
+      "id": "f018",
+      "a": "end-game",
+      "b": "golden-fury",
+      "winner": "end-game",
+      "method": null,
+      "sec": null,
+      "event": "E7"
+    },
+    {
+      "id": "f019",
+      "a": "manta",
+      "b": "valkyrie",
+      "winner": "manta",
+      "method": null,
+      "sec": null,
+      "event": "E7"
+    },
+    {
+      "id": "f020",
+      "a": "magnitude",
+      "b": "madcatter",
+      "winner": "magnitude",
+      "method": null,
+      "sec": null,
+      "event": "E7"
+    },
+    {
+      "id": "f021",
+      "a": "jackpot",
+      "b": "the-twins",
+      "winner": "jackpot",
+      "method": null,
+      "sec": null,
+      "event": "E8"
+    },
+    {
+      "id": "f022",
+      "a": "skorpios",
+      "b": "terrortops",
+      "winner": "skorpios",
+      "method": null,
+      "sec": null,
+      "event": "E8"
+    },
+    {
+      "id": "f023",
+      "a": "switchback",
+      "b": "orbitron",
+      "winner": "switchback",
+      "method": null,
+      "sec": null,
+      "event": "E8"
+    }
+  ]
+}

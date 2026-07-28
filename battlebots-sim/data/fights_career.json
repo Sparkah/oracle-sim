@@ -1,0 +1,939 @@
+{
+  "_meta": {
+    "source": "battlebots-fandom-career",
+    "sourceLabel": "battlebots.fandom.com career tables via Bright Data Web Unlocker",
+    "route": "brightdata",
+    "fetchedAt": "2026-07-28T18:50:58.502Z",
+    "n": 103,
+    "caveat": "Historical fights across many seasons and rule sets, not Pro League 2026. Parsed from the same 25 cached pages as the roster - no extra requests. Deduped across both competitors' pages."
+  },
+  "fights": [
+    {
+      "id": "c001",
+      "a": "manta",
+      "b": "skorpios",
+      "winner": "manta",
+      "method": null,
+      "sec": null,
+      "event": "BattleBots Pro League"
+    },
+    {
+      "id": "c002",
+      "a": "terrortops",
+      "b": "bloodsport",
+      "winner": "terrortops",
+      "method": null,
+      "sec": null,
+      "event": "BattleBots FaceOffs"
+    },
+    {
+      "id": "c003",
+      "a": "terrortops",
+      "b": "switchback",
+      "winner": "terrortops",
+      "method": null,
+      "sec": null,
+      "event": "BattleBots FaceOffs"
+    },
+    {
+      "id": "c004",
+      "a": "terrortops",
+      "b": "orbitron",
+      "winner": "terrortops",
+      "method": null,
+      "sec": null,
+      "event": "BattleBots FaceOffs"
+    },
+    {
+      "id": "c005",
+      "a": "terrortops",
+      "b": "jackpot",
+      "winner": "terrortops",
+      "method": null,
+      "sec": null,
+      "event": "BattleBots FaceOffs"
+    },
+    {
+      "id": "c006",
+      "a": "terrortops",
+      "b": "magnitude",
+      "winner": "magnitude",
+      "method": null,
+      "sec": null,
+      "event": "BattleBots FaceOffs"
+    },
+    {
+      "id": "c007",
+      "a": "terrortops",
+      "b": "valkyrie",
+      "winner": "terrortops",
+      "method": null,
+      "sec": null,
+      "event": "BattleBots Pro League"
+    },
+    {
+      "id": "c008",
+      "a": "valkyrie",
+      "b": "ribbot",
+      "winner": "valkyrie",
+      "method": null,
+      "sec": null,
+      "event": "World Championship IV"
+    },
+    {
+      "id": "c009",
+      "a": "valkyrie",
+      "b": "hypershock",
+      "winner": "hypershock",
+      "method": null,
+      "sec": null,
+      "event": "World Championship IV"
+    },
+    {
+      "id": "c010",
+      "a": "valkyrie",
+      "b": "hypershock",
+      "winner": "hypershock",
+      "method": null,
+      "sec": null,
+      "event": "BattleBots: Champions I"
+    },
+    {
+      "id": "c011",
+      "a": "valkyrie",
+      "b": "malice",
+      "winner": "malice",
+      "method": null,
+      "sec": null,
+      "event": "World Championship VII"
+    },
+    {
+      "id": "c012",
+      "a": "valkyrie",
+      "b": "tombstone",
+      "winner": "valkyrie",
+      "method": null,
+      "sec": null,
+      "event": "BattleBots FaceOffs"
+    },
+    {
+      "id": "c013",
+      "a": "valkyrie",
+      "b": "hypershock",
+      "winner": "valkyrie",
+      "method": null,
+      "sec": null,
+      "event": "BattleBots FaceOffs"
+    },
+    {
+      "id": "c014",
+      "a": "valkyrie",
+      "b": "orbitron",
+      "winner": "orbitron",
+      "method": null,
+      "sec": null,
+      "event": "BattleBots FaceOffs"
+    },
+    {
+      "id": "c015",
+      "a": "skorpios",
+      "b": "deathroll",
+      "winner": "skorpios",
+      "method": null,
+      "sec": null,
+      "event": "World Championship II"
+    },
+    {
+      "id": "c016",
+      "a": "skorpios",
+      "b": "hypershock",
+      "winner": "skorpios",
+      "method": null,
+      "sec": null,
+      "event": "World Championship III"
+    },
+    {
+      "id": "c017",
+      "a": "skorpios",
+      "b": "copperhead",
+      "winner": "skorpios",
+      "method": null,
+      "sec": null,
+      "event": "World Championship IV"
+    },
+    {
+      "id": "c018",
+      "a": "skorpios",
+      "b": "tombstone",
+      "winner": "skorpios",
+      "method": null,
+      "sec": null,
+      "event": "World Championship V"
+    },
+    {
+      "id": "c019",
+      "a": "skorpios",
+      "b": "bloodsport",
+      "winner": "bloodsport",
+      "method": null,
+      "sec": null,
+      "event": "World Championship V"
+    },
+    {
+      "id": "c020",
+      "a": "skorpios",
+      "b": "witch-doctor",
+      "winner": "witch-doctor",
+      "method": null,
+      "sec": null,
+      "event": "World Championship V"
+    },
+    {
+      "id": "c021",
+      "a": "skorpios",
+      "b": "hypershock",
+      "winner": "skorpios",
+      "method": null,
+      "sec": null,
+      "event": "BattleBots: Bounty Hunters"
+    },
+    {
+      "id": "c022",
+      "a": "skorpios",
+      "b": "malice",
+      "winner": "skorpios",
+      "method": null,
+      "sec": null,
+      "event": "World Championship VI"
+    },
+    {
+      "id": "c023",
+      "a": "skorpios",
+      "b": "end-game",
+      "winner": "end-game",
+      "method": null,
+      "sec": null,
+      "event": "World Championship VI"
+    },
+    {
+      "id": "c024",
+      "a": "skorpios",
+      "b": "cobalt",
+      "winner": "cobalt",
+      "method": null,
+      "sec": null,
+      "event": "re:MARS all:STARS BattleBots Challenge (2022)"
+    },
+    {
+      "id": "c025",
+      "a": "skorpios",
+      "b": "bloodsport",
+      "winner": "skorpios",
+      "method": null,
+      "sec": null,
+      "event": "BattleBots: Champions I"
+    },
+    {
+      "id": "c026",
+      "a": "skorpios",
+      "b": "hypershock",
+      "winner": "hypershock",
+      "method": null,
+      "sec": null,
+      "event": "BattleBots: Champions I"
+    },
+    {
+      "id": "c027",
+      "a": "skorpios",
+      "b": "jackpot",
+      "winner": "skorpios",
+      "method": null,
+      "sec": null,
+      "event": "World Championship VII"
+    },
+    {
+      "id": "c028",
+      "a": "skorpios",
+      "b": "ribbot",
+      "winner": "ribbot",
+      "method": null,
+      "sec": null,
+      "event": "World Championship VII"
+    },
+    {
+      "id": "c029",
+      "a": "skorpios",
+      "b": "huge",
+      "winner": "huge",
+      "method": null,
+      "sec": null,
+      "event": "World Championship VII"
+    },
+    {
+      "id": "c030",
+      "a": "skorpios",
+      "b": "madcatter",
+      "winner": "skorpios",
+      "method": null,
+      "sec": null,
+      "event": "BattleBots FaceOffs"
+    },
+    {
+      "id": "c031",
+      "a": "madcatter",
+      "b": "ribbot",
+      "winner": "madcatter",
+      "method": null,
+      "sec": null,
+      "event": "World Championship V"
+    },
+    {
+      "id": "c032",
+      "a": "madcatter",
+      "b": "malice",
+      "winner": "madcatter",
+      "method": null,
+      "sec": null,
+      "event": "World Championship V"
+    },
+    {
+      "id": "c033",
+      "a": "madcatter",
+      "b": "tombstone",
+      "winner": "tombstone",
+      "method": null,
+      "sec": null,
+      "event": "World Championship V"
+    },
+    {
+      "id": "c034",
+      "a": "madcatter",
+      "b": "hypershock",
+      "winner": "hypershock",
+      "method": null,
+      "sec": null,
+      "event": "BattleBots: Champions I"
+    },
+    {
+      "id": "c035",
+      "a": "madcatter",
+      "b": "huge",
+      "winner": "huge",
+      "method": null,
+      "sec": null,
+      "event": "World Championship VII"
+    },
+    {
+      "id": "c036",
+      "a": "madcatter",
+      "b": "bloodsport",
+      "winner": "madcatter",
+      "method": null,
+      "sec": null,
+      "event": "BattleBot: Champions II"
+    },
+    {
+      "id": "c037",
+      "a": "madcatter",
+      "b": "tombstone",
+      "winner": "madcatter",
+      "method": null,
+      "sec": null,
+      "event": "BattleBots Pro League"
+    },
+    {
+      "id": "c038",
+      "a": "magnitude",
+      "b": "hypershock",
+      "winner": "hypershock",
+      "method": null,
+      "sec": null,
+      "event": "BattleBots Proving Ground"
+    },
+    {
+      "id": "c039",
+      "a": "magnitude",
+      "b": "jackpot",
+      "winner": "magnitude",
+      "method": null,
+      "sec": null,
+      "event": "BattleBots FaceOffs"
+    },
+    {
+      "id": "c040",
+      "a": "magnitude",
+      "b": "witch-doctor",
+      "winner": "witch-doctor",
+      "method": null,
+      "sec": null,
+      "event": "BattleBots FaceOffs"
+    },
+    {
+      "id": "c041",
+      "a": "magnitude",
+      "b": "orbitron",
+      "winner": "orbitron",
+      "method": null,
+      "sec": null,
+      "event": "BattleBots FaceOffs"
+    },
+    {
+      "id": "c042",
+      "a": "magnitude",
+      "b": "disarray",
+      "winner": "magnitude",
+      "method": null,
+      "sec": null,
+      "event": "BattleBots Pro League"
+    },
+    {
+      "id": "c043",
+      "a": "disarray",
+      "b": "jackpot",
+      "winner": "jackpot",
+      "method": null,
+      "sec": null,
+      "event": "BattleBots Proving Ground"
+    },
+    {
+      "id": "c044",
+      "a": "disarray",
+      "b": "orbitron",
+      "winner": "orbitron",
+      "method": null,
+      "sec": null,
+      "event": "BattleBots Proving Ground"
+    },
+    {
+      "id": "c045",
+      "a": "disarray",
+      "b": "malice",
+      "winner": "disarray",
+      "method": null,
+      "sec": null,
+      "event": "BattleBots FaceOffs"
+    },
+    {
+      "id": "c046",
+      "a": "disarray",
+      "b": "jackpot",
+      "winner": "jackpot",
+      "method": null,
+      "sec": null,
+      "event": "BattleBots FaceOffs"
+    },
+    {
+      "id": "c047",
+      "a": "tombstone",
+      "b": "witch-doctor",
+      "winner": "tombstone",
+      "method": null,
+      "sec": null,
+      "event": "World Championship I"
+    },
+    {
+      "id": "c048",
+      "a": "tombstone",
+      "b": "minotaur",
+      "winner": "tombstone",
+      "method": null,
+      "sec": null,
+      "event": "World Championship III"
+    },
+    {
+      "id": "c049",
+      "a": "tombstone",
+      "b": "witch-doctor",
+      "winner": "witch-doctor",
+      "method": null,
+      "sec": null,
+      "event": "re:MARS all:STARS BattleBots Challenge (2019)"
+    },
+    {
+      "id": "c050",
+      "a": "tombstone",
+      "b": "end-game",
+      "winner": "end-game",
+      "method": null,
+      "sec": null,
+      "event": "World Championship V"
+    },
+    {
+      "id": "c051",
+      "a": "tombstone",
+      "b": "jackpot",
+      "winner": "jackpot",
+      "method": null,
+      "sec": null,
+      "event": "World Championship VI"
+    },
+    {
+      "id": "c052",
+      "a": "tombstone",
+      "b": "hypershock",
+      "winner": "hypershock",
+      "method": null,
+      "sec": null,
+      "event": "re:MARS all:STARS BattleBots Challenge (2022)"
+    },
+    {
+      "id": "c053",
+      "a": "tombstone",
+      "b": "orbitron",
+      "winner": "tombstone",
+      "method": null,
+      "sec": null,
+      "event": "BattleBots FaceOffs"
+    },
+    {
+      "id": "c054",
+      "a": "tombstone",
+      "b": "hypershock",
+      "winner": "hypershock",
+      "method": null,
+      "sec": null,
+      "event": "BattleBots FaceOffs"
+    },
+    {
+      "id": "c055",
+      "a": "the-twins",
+      "b": "cobalt",
+      "winner": "the-twins",
+      "method": null,
+      "sec": null,
+      "event": "BattleBots Pro League"
+    },
+    {
+      "id": "c056",
+      "a": "cobalt",
+      "b": "end-game",
+      "winner": "end-game",
+      "method": null,
+      "sec": null,
+      "event": "World Championship IV"
+    },
+    {
+      "id": "c057",
+      "a": "cobalt",
+      "b": "minotaur",
+      "winner": "minotaur",
+      "method": null,
+      "sec": null,
+      "event": "World Championship IV"
+    },
+    {
+      "id": "c058",
+      "a": "cobalt",
+      "b": "deathroll",
+      "winner": "cobalt",
+      "method": null,
+      "sec": null,
+      "event": "World Championship VII"
+    },
+    {
+      "id": "c059",
+      "a": "cobalt",
+      "b": "minotaur",
+      "winner": "minotaur",
+      "method": null,
+      "sec": null,
+      "event": "World Championship VII"
+    },
+    {
+      "id": "c060",
+      "a": "cobalt",
+      "b": "jackpot",
+      "winner": "jackpot",
+      "method": null,
+      "sec": null,
+      "event": "BattleBots: Champions II"
+    },
+    {
+      "id": "c061",
+      "a": "jackpot",
+      "b": "malice",
+      "winner": "jackpot",
+      "method": null,
+      "sec": null,
+      "event": "World Championship VI"
+    },
+    {
+      "id": "c062",
+      "a": "jackpot",
+      "b": "malice",
+      "winner": "malice",
+      "method": null,
+      "sec": null,
+      "event": "re:MARS all:STARS BattleBots Challenge (2022)"
+    },
+    {
+      "id": "c063",
+      "a": "jackpot",
+      "b": "ribbot",
+      "winner": "jackpot",
+      "method": null,
+      "sec": null,
+      "event": "World Championship VII"
+    },
+    {
+      "id": "c064",
+      "a": "jackpot",
+      "b": "witch-doctor",
+      "winner": "witch-doctor",
+      "method": null,
+      "sec": null,
+      "event": "World Championship VII"
+    },
+    {
+      "id": "c065",
+      "a": "jackpot",
+      "b": "end-game",
+      "winner": "end-game",
+      "method": null,
+      "sec": null,
+      "event": "BattleBots: Champions II"
+    },
+    {
+      "id": "c066",
+      "a": "jackpot",
+      "b": "malice",
+      "winner": "jackpot",
+      "method": null,
+      "sec": null,
+      "event": "BattleBots FaceOffs"
+    },
+    {
+      "id": "c067",
+      "a": "jackpot",
+      "b": "orbitron",
+      "winner": "orbitron",
+      "method": null,
+      "sec": null,
+      "event": "BattleBots FaceOffs"
+    },
+    {
+      "id": "c068",
+      "a": "jackpot",
+      "b": "copperhead",
+      "winner": "copperhead",
+      "method": null,
+      "sec": null,
+      "event": "BattleBots Pro League"
+    },
+    {
+      "id": "c069",
+      "a": "malice",
+      "b": "huge",
+      "winner": "malice",
+      "method": null,
+      "sec": null,
+      "event": "BattleBots: Bounty Hunters"
+    },
+    {
+      "id": "c070",
+      "a": "malice",
+      "b": "ribbot",
+      "winner": "ribbot",
+      "method": null,
+      "sec": null,
+      "event": "BattleBots: Champions I"
+    },
+    {
+      "id": "c071",
+      "a": "malice",
+      "b": "switchback",
+      "winner": "malice",
+      "method": null,
+      "sec": null,
+      "event": "World Championship VII"
+    },
+    {
+      "id": "c072",
+      "a": "malice",
+      "b": "minotaur",
+      "winner": "minotaur",
+      "method": null,
+      "sec": null,
+      "event": "World Championship VII"
+    },
+    {
+      "id": "c073",
+      "a": "malice",
+      "b": "end-game",
+      "winner": "malice",
+      "method": null,
+      "sec": null,
+      "event": "BattleBots Pro League"
+    },
+    {
+      "id": "c074",
+      "a": "deathroll",
+      "b": "end-game",
+      "winner": "deathroll",
+      "method": null,
+      "sec": null,
+      "event": "World Championship IV"
+    },
+    {
+      "id": "c075",
+      "a": "deathroll",
+      "b": "minotaur",
+      "winner": "deathroll",
+      "method": null,
+      "sec": null,
+      "event": "World Championship IV"
+    },
+    {
+      "id": "c076",
+      "a": "deathroll",
+      "b": "witch-doctor",
+      "winner": "witch-doctor",
+      "method": null,
+      "sec": null,
+      "event": "World Championship IV"
+    },
+    {
+      "id": "c077",
+      "a": "deathroll",
+      "b": "switchback",
+      "winner": "deathroll",
+      "method": null,
+      "sec": null,
+      "event": "World Championship VII"
+    },
+    {
+      "id": "c078",
+      "a": "end-game",
+      "b": "ribbot",
+      "winner": "ribbot",
+      "method": null,
+      "sec": null,
+      "event": "World Championship IV"
+    },
+    {
+      "id": "c079",
+      "a": "end-game",
+      "b": "minotaur",
+      "winner": "minotaur",
+      "method": null,
+      "sec": null,
+      "event": "World Championship IV"
+    },
+    {
+      "id": "c080",
+      "a": "end-game",
+      "b": "hypershock",
+      "winner": "end-game",
+      "method": null,
+      "sec": null,
+      "event": "World Championship V"
+    },
+    {
+      "id": "c081",
+      "a": "end-game",
+      "b": "bloodsport",
+      "winner": "bloodsport",
+      "method": null,
+      "sec": null,
+      "event": "World Championship V"
+    },
+    {
+      "id": "c082",
+      "a": "end-game",
+      "b": "witch-doctor",
+      "winner": "end-game",
+      "method": null,
+      "sec": null,
+      "event": "World Championship VI"
+    },
+    {
+      "id": "c083",
+      "a": "end-game",
+      "b": "minotaur",
+      "winner": "minotaur",
+      "method": null,
+      "sec": null,
+      "event": "World Championship VI"
+    },
+    {
+      "id": "c084",
+      "a": "end-game",
+      "b": "ribbot",
+      "winner": "end-game",
+      "method": null,
+      "sec": null,
+      "event": "BattleBots: Champions I"
+    },
+    {
+      "id": "c085",
+      "a": "end-game",
+      "b": "witch-doctor",
+      "winner": "end-game",
+      "method": null,
+      "sec": null,
+      "event": "BattleBots: Champions I"
+    },
+    {
+      "id": "c086",
+      "a": "end-game",
+      "b": "hypershock",
+      "winner": "end-game",
+      "method": null,
+      "sec": null,
+      "event": "World Championship VII"
+    },
+    {
+      "id": "c087",
+      "a": "end-game",
+      "b": "copperhead",
+      "winner": "copperhead",
+      "method": null,
+      "sec": null,
+      "event": "World Championship VII"
+    },
+    {
+      "id": "c088",
+      "a": "huge",
+      "b": "hypershock",
+      "winner": "huge",
+      "method": null,
+      "sec": null,
+      "event": "World Championship IV"
+    },
+    {
+      "id": "c089",
+      "a": "huge",
+      "b": "switchback",
+      "winner": "huge",
+      "method": null,
+      "sec": null,
+      "event": "World Championship VI"
+    },
+    {
+      "id": "c090",
+      "a": "huge",
+      "b": "witch-doctor",
+      "winner": "huge",
+      "method": null,
+      "sec": null,
+      "event": "World Championship VII"
+    },
+    {
+      "id": "c091",
+      "a": "huge",
+      "b": "copperhead",
+      "winner": "huge",
+      "method": null,
+      "sec": null,
+      "event": "World Championship VII"
+    },
+    {
+      "id": "c092",
+      "a": "minotaur",
+      "b": "witch-doctor",
+      "winner": "minotaur",
+      "method": null,
+      "sec": null,
+      "event": "World Championship III"
+    },
+    {
+      "id": "c093",
+      "a": "minotaur",
+      "b": "bloodsport",
+      "winner": "minotaur",
+      "method": null,
+      "sec": null,
+      "event": "World Championship VI"
+    },
+    {
+      "id": "c094",
+      "a": "minotaur",
+      "b": "witch-doctor",
+      "winner": "witch-doctor",
+      "method": null,
+      "sec": null,
+      "event": "World Championship VI"
+    },
+    {
+      "id": "c095",
+      "a": "minotaur",
+      "b": "witch-doctor",
+      "winner": "minotaur",
+      "method": null,
+      "sec": null,
+      "event": "World Championship VII"
+    },
+    {
+      "id": "c096",
+      "a": "minotaur",
+      "b": "bloodsport",
+      "winner": "minotaur",
+      "method": null,
+      "sec": null,
+      "event": "BattleBots Pro League"
+    },
+    {
+      "id": "c097",
+      "a": "hypershock",
+      "b": "witch-doctor",
+      "winner": "witch-doctor",
+      "method": null,
+      "sec": null,
+      "event": "BattleBots: Champions I"
+    },
+    {
+      "id": "c098",
+      "a": "hypershock",
+      "b": "orbitron",
+      "winner": "hypershock",
+      "method": null,
+      "sec": null,
+      "event": "BattleBots FaceOffs"
+    },
+    {
+      "id": "c099",
+      "a": "witch-doctor",
+      "b": "copperhead",
+      "winner": "witch-doctor",
+      "method": null,
+      "sec": null,
+      "event": "World Championship VI"
+    },
+    {
+      "id": "c100",
+      "a": "witch-doctor",
+      "b": "ribbot",
+      "winner": "witch-doctor",
+      "method": null,
+      "sec": null,
+      "event": "World Championship VII"
+    },
+    {
+      "id": "c101",
+      "a": "witch-doctor",
+      "b": "orbitron",
+      "winner": "witch-doctor",
+      "method": null,
+      "sec": null,
+      "event": "BattleBots Pro League"
+    },
+    {
+      "id": "c102",
+      "a": "switchback",
+      "b": "bloodsport",
+      "winner": "bloodsport",
+      "method": null,
+      "sec": null,
+      "event": "BattleBots FaceOffs"
+    },
+    {
+      "id": "c103",
+      "a": "switchback",
+      "b": "ribbot",
+      "winner": "switchback",
+      "method": null,
+      "sec": null,
+      "event": "BattleBots Pro League"
+    }
+  ]
+}

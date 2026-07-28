@@ -1,0 +1,56 @@
+# Oracle Sim
+
+> A BattleBots Pro League 2026 prediction model, scraped live via Bright Data, presented as a
+> stress test rather than as a working oracle. The central result is a measured negative:
+> a small-data model becomes dangerously confident long before it becomes accurate.
+
+Built at the BattleBots Hack Night, London, 28 July 2026. Vanilla JS, no build step, no runtime
+API key. All scraped data and the raw page cache are committed, so every number reproduces
+offline.
+
+## Headline numbers (reproduce with `node battlebots-sim/tools/eval.mjs`)
+
+- Accuracy 56.5% on 23 fights; record-only baseline 41.3%
+- Brier 0.424, where 0.25 is the score for always predicting 50/50
+- Calibration failure: the 90-100% confidence bucket is correct 30% of the time
+- McNemar exact p = 1.00, with b = 0 and c = 0: model and baseline never once disagreed
+- Betting the model over the season: bankroll 1000 -> 246
+- The +15.2 point "lift" over baseline is NOT claimed as a result; it is not significant
+
+## Documents
+
+- [README](README.md): what it is, how to run it, and the stated limitations
+- [FINDINGS](FINDINGS.md): three reproducible results, two of which are bugs found in our own work
+- [DATA_SOURCES](DATA_SOURCES.md): every source, the two refusals, and how provenance is enforced
+- [ARCHITECTURE](ARCHITECTURE.md): model, back-test, layers, and the decisions worth defending
+- [SCHEMA](battlebots-sim/SCHEMA.md): the frozen two-file data contract
+- [SUBMISSION](SUBMISSION.md): hackathon submission text
+
+## Data provenance summary
+
+- battlebots.fandom.com via Bright Data Web Unlocker: 25 pages, 24 bots, 23 fights
+- x.com via Bright Data Scraper API dataset gd_lwxkxvnf1cynvib9co: 40 posts, 10 bots mentioned
+- gamma-api.polymarket.com via Web Unlocker: no BattleBots market exists
+- reddit.com and youtube.com: REFUSED by Web Unlocker on robots.txt grounds, not fetched, and
+  no substitute data was invented
+
+## Notable engineering results
+
+- The logistic fit diverged to NaN at l2 >= 6 while still reporting 69.6% accuracy, making the
+  broken model the best-looking cell in the hyperparameter sweep. Cause: gradient descent with
+  weight decay is stable only while lr*l2 < 2. Fixed by scaling the step.
+- Mining every competitor's full career results table off the already-cached pages produced 559
+  raw results, deduped to 455 unique fights. Training on 113 fights instead of 23 improved Brier
+  from 0.424 to 0.299 but dropped accuracy to 46%, below chance. The problem was data relevance,
+  not data volume.
+- Fetch route is recorded per page at fetch time, so a cache-served run cannot inherit a Bright
+  Data provenance it only partly has.
+
+## Verification commands
+
+- `node battlebots-sim/tools/eval.mjs` - model, calibration, McNemar, learned weights
+- `node battlebots-sim/tools/bet.mjs` - season P&L; add `--l2 3` for the regularised comparison
+- `node battlebots-sim/tools/sweep.mjs` - hyperparameter grid
+- `node battlebots-sim/scrape/test_parsers.mjs` - parser and validator tests
+- `node battlebots-sim/scrape/career.mjs` - re-derive the 455 career fights from cached pages
+- `node battlebots-sim/tools/qa.cjs` - headless browser test, requires a static server on 8099

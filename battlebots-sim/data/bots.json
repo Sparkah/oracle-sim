@@ -1,0 +1,352 @@
+{
+  "_meta": {
+    "source": "battlebots-fandom",
+    "sourceLabel": "battlebots.fandom.com via Bright Data Web Unlocker",
+    "route": "brightdata",
+    "fetchedAt": "2026-07-28T18:02:50.083Z",
+    "season": "Pro League 2026",
+    "n": 24,
+    "chatter": {
+      "source": "x.com via Bright Data Scraper API (dataset gd_lwxkxvnf1cynvib9co)",
+      "snapshot": "sd_ms4zwdgda3v8lbbnb",
+      "posts": 40,
+      "profiles": [
+        "https://x.com/BattleBots",
+        "https://x.com/BattleBotsAdam",
+        "https://x.com/RobotCombat"
+      ],
+      "fetchedAt": "2026-07-28T18:36:07.745Z",
+      "caveat": "The X Posts dataset discovers by profile, not keyword, so this is league/team account output rather than a search of all of X. Mention counts are whole-word name matches."
+    }
+  },
+  "bots": [
+    {
+      "id": "manta",
+      "name": "Manta",
+      "weapon": "vspinner",
+      "weightLb": 243,
+      "color": "hsl(0 68% 52%)",
+      "group": "A",
+      "weaponText": "Eggbeater drum spinner",
+      "from": "Tempe, AZ",
+      "team": "Team Tanto Robotics",
+      "chatter": null
+    },
+    {
+      "id": "terrortops",
+      "name": "Terrortops",
+      "weapon": "vspinner",
+      "weightLb": 250,
+      "color": "hsl(138 68% 59%)",
+      "group": "A",
+      "weaponText": "Vertical spinner Lifter",
+      "from": "Long Beach, CA",
+      "team": "Team Terrortops",
+      "chatter": null
+    },
+    {
+      "id": "valkyrie",
+      "name": "Valkyrie",
+      "weapon": "hspinner",
+      "weightLb": 250,
+      "color": "hsl(275 68% 66%)",
+      "group": "A",
+      "weaponText": "Undercutter spinner",
+      "from": "Berkeley, CA (BB FaceOffs-Present) Somerville, MA (WC IV-BB: Champions II) Cambridge, MA (WC III)",
+      "team": "Team VALKYRIE (WC VI-Present) Team Questionable Designs (WC III-WC V)",
+      "chatter": null
+    },
+    {
+      "id": "skorpios",
+      "name": "Skorpios",
+      "weapon": "hammer",
+      "weightLb": 250,
+      "color": "hsl(53 68% 52%)",
+      "group": "A",
+      "weaponText": "Articulating overhead saw Hammer saw (WC IV-Present) Articulating flamethrower fangs (WC V) Overhead flamethrower (WC VII-Present) Overhead swinging knife (WC VII-Present)",
+      "from": "Moraga, CA",
+      "team": "Bot Bash Party Crew (formerly Offbeat Robotics)",
+      "chatter": {
+        "mentions": 2,
+        "likes": 698,
+        "views": 25501
+      }
+    },
+    {
+      "id": "madcatter",
+      "name": "MadCatter",
+      "weapon": "vspinner",
+      "weightLb": 250,
+      "color": "hsl(190 68% 59%)",
+      "group": "B",
+      "weaponText": "Vertical spinner Axe (WC IV-BB: Bounty Hunters) Lifting arm (WC IV-WC VII)",
+      "from": "Pomona, CA",
+      "team": "Team Bad Kitty",
+      "chatter": {
+        "mentions": 2,
+        "likes": 698,
+        "views": 25501
+      }
+    },
+    {
+      "id": "magnitude",
+      "name": "Magnitude",
+      "weapon": "vspinner",
+      "weightLb": 250,
+      "color": "hsl(328 68% 66%)",
+      "group": "B",
+      "weaponText": "Eggbeater drum spinner",
+      "from": "Parker, CO",
+      "team": "Team Wazio",
+      "chatter": null
+    },
+    {
+      "id": "disarray",
+      "name": "Disarray",
+      "weapon": "vspinner",
+      "weightLb": 250,
+      "color": "hsl(105 68% 52%)",
+      "group": "B",
+      "weaponText": "Vertical drisk spinner Vertical disk spinner (Proving Ground 2024-Present) Flamethrower (Proving Ground 2025-Present)",
+      "from": "Tucson, AZ",
+      "team": "Wildcat Robotics (a.k.a. Team 22037)",
+      "chatter": null
+    },
+    {
+      "id": "tombstone",
+      "name": "Tombstone",
+      "weapon": "hspinner",
+      "weightLb": 220,
+      "color": "hsl(243 68% 59%)",
+      "group": "B",
+      "weaponText": "Horizontal bar spinner",
+      "from": null,
+      "team": "Hardcore Robotics",
+      "chatter": {
+        "mentions": 3,
+        "likes": 1002,
+        "views": 53923
+      }
+    },
+    {
+      "id": "copperhead",
+      "name": "Copperhead",
+      "weapon": "vspinner",
+      "weightLb": 250,
+      "color": "hsl(20 68% 66%)",
+      "group": "C",
+      "weaponText": "Eggbeater drum spinner",
+      "from": "Denver, CO",
+      "team": "Team Copperhead (formerly Caustic Creations)",
+      "chatter": null
+    },
+    {
+      "id": "the-twins",
+      "name": "The Twins",
+      "weapon": "vspinner",
+      "weightLb": 250,
+      "color": "hsl(158 68% 52%)",
+      "group": "C",
+      "weaponText": "2x Vertical spinners",
+      "from": "Mountain View, CA",
+      "team": "Seems Reasonable Robotics",
+      "chatter": null
+    },
+    {
+      "id": "cobalt",
+      "name": "Cobalt",
+      "weapon": "vspinner",
+      "weightLb": 250,
+      "color": "hsl(295 68% 59%)",
+      "group": "C",
+      "weaponText": "Horizontal spinner (WC II) Vertical spinner (WC IV-Present)",
+      "from": "Oceanside, CA (previously Bromsgrove, UK)",
+      "team": "Robotic Death Company (WC VI-Present) Team Carbide (WC II, WC IV)",
+      "chatter": {
+        "mentions": 2,
+        "likes": 698,
+        "views": 25501
+      }
+    },
+    {
+      "id": "jackpot",
+      "name": "JackPot",
+      "weapon": "vspinner",
+      "weightLb": 250,
+      "color": "hsl(73 68% 66%)",
+      "group": "C",
+      "weaponText": "Vertical spinner Lifting forks (WC VII-Present)",
+      "from": "Las Vegas, NV",
+      "team": "Vegas Combat Robotics",
+      "chatter": {
+        "mentions": 2,
+        "likes": 698,
+        "views": 25501
+      }
+    },
+    {
+      "id": "malice",
+      "name": "Malice",
+      "weapon": "hspinner",
+      "weightLb": 250,
+      "color": "hsl(210 68% 52%)",
+      "group": "D",
+      "weaponText": "Horizontal drum spinner",
+      "from": "San Jose, CA",
+      "team": "Team Malice",
+      "chatter": {
+        "mentions": 2,
+        "likes": 698,
+        "views": 25501
+      }
+    },
+    {
+      "id": "golden-fury",
+      "name": "Golden Fury",
+      "weapon": "vspinner",
+      "weightLb": 242,
+      "color": "hsl(348 68% 59%)",
+      "group": "D",
+      "weaponText": "Vertical spinner",
+      "from": "Chennai, India (BB Pro League) Pondicherry, India (WC V)",
+      "team": "PY Roboticzs",
+      "chatter": null
+    },
+    {
+      "id": "deathroll",
+      "name": "DeathRoll",
+      "weapon": "vspinner",
+      "weightLb": 250,
+      "color": "hsl(125 68% 66%)",
+      "group": "D",
+      "weaponText": "Vertical spinning disk",
+      "from": "Brisbane, Australia",
+      "team": "Team DeathRoll",
+      "chatter": null
+    },
+    {
+      "id": "end-game",
+      "name": "End Game",
+      "weapon": "vspinner",
+      "weightLb": 250,
+      "color": "hsl(263 68% 52%)",
+      "group": "D",
+      "weaponText": "Vertical spinner",
+      "from": "Auckland, AUK, New Zealand",
+      "team": "Team End Game (formerly OYES Robotics)",
+      "chatter": {
+        "mentions": 1,
+        "likes": 381,
+        "views": 16749
+      }
+    },
+    {
+      "id": "huge",
+      "name": "HUGE",
+      "weapon": "vspinner",
+      "weightLb": 250,
+      "color": "hsl(40 68% 59%)",
+      "group": "E",
+      "weaponText": "Vertical bar spinner",
+      "from": "South Windsor, CT",
+      "team": "Team HUGE",
+      "chatter": null
+    },
+    {
+      "id": "minotaur",
+      "name": "Minotaur",
+      "weapon": "vspinner",
+      "weightLb": 250,
+      "color": "hsl(178 68% 66%)",
+      "group": "E",
+      "weaponText": "Drum spinner",
+      "from": "Rio de Janeiro, RJ, Brazil",
+      "team": "Team RioBotz",
+      "chatter": null
+    },
+    {
+      "id": "bloodsport",
+      "name": "Bloodsport",
+      "weapon": "hspinner",
+      "weightLb": 250,
+      "color": "hsl(315 68% 52%)",
+      "group": "E",
+      "weaponText": "Horizontal spinner",
+      "from": "Cambridge, MA",
+      "team": "Bots 'n' Stuff Robotics",
+      "chatter": {
+        "mentions": 1,
+        "likes": 358,
+        "views": 79140
+      }
+    },
+    {
+      "id": "hypershock",
+      "name": "HyperShock",
+      "weapon": "vspinner",
+      "weightLb": 250,
+      "color": "hsl(93 68% 59%)",
+      "group": "E",
+      "weaponText": "Vertical spinner Hydraulic arms (WC I) Lifting wedges (WC II)",
+      "from": "Miami, FL",
+      "team": "Team HyperShock (formerly Shenanigans & Co.)",
+      "chatter": {
+        "mentions": 4,
+        "likes": 1250,
+        "views": 77274
+      }
+    },
+    {
+      "id": "witch-doctor",
+      "name": "Witch Doctor",
+      "weapon": "vspinner",
+      "weightLb": 250,
+      "color": "hsl(230 68% 66%)",
+      "group": "F",
+      "weaponText": "Vertical disk spinner Vertical drisk spinner (WC II-Present) Flamethrower",
+      "from": "Miami, FL",
+      "team": "Team Witch Doctor (formerly Busted Nuts Robotics)",
+      "chatter": {
+        "mentions": 1,
+        "likes": 293,
+        "views": 17669
+      }
+    },
+    {
+      "id": "switchback",
+      "name": "Switchback",
+      "weapon": "vspinner",
+      "weightLb": 250,
+      "color": "hsl(8 68% 52%)",
+      "group": "F",
+      "weaponText": "Articulating eggbeater spinner (WC VII-Present) Articulating drum spinner (WC VI-BB: Champions I)",
+      "from": "Dallas, TX",
+      "team": "Team Midnight Invention",
+      "chatter": null
+    },
+    {
+      "id": "ribbot",
+      "name": "Ribbot",
+      "weapon": "hspinner",
+      "weightLb": 250,
+      "color": "hsl(145 68% 59%)",
+      "group": "F",
+      "weaponText": "Vertical disk spinner Horizontal undercutter Vertical bar spinner Lifter (WC IV) Eggbeater spinner (BB BB Pro League)",
+      "from": "Boston, MA",
+      "team": "Team Ribbot (formerly Team WPI)",
+      "chatter": null
+    },
+    {
+      "id": "orbitron",
+      "name": "Orbitron",
+      "weapon": "vspinner",
+      "weightLb": 250,
+      "color": "hsl(283 68% 66%)",
+      "group": "F",
+      "weaponText": "Twin vertical spinners",
+      "from": "Waterloo, ON, Canada",
+      "team": "Team Orbitron",
+      "chatter": null
+    }
+  ]
+}
